@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="keywords" content="cipher.md, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>cipher.md | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -306,12 +306,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">cipher.md</h1>
                 </div>
             </div>
         </div>
@@ -426,9 +426,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+                                <span class="chip bg-color">密码学</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -440,7 +444,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-03-18
+                    2020-03-05
                 </div>
                 
 
@@ -457,20 +461,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+                <h3 id="凯撒密码"><a href="#凯撒密码" class="headerlink" title="凯撒密码"></a>凯撒密码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">char upper_E3(char str,int <span class="built_in">shift</span>)</span><br><span class="line">&#123;</span><br><span class="line">        <span class="built_in">return</span> char((str-65+<span class="built_in">shift</span>)%26+65);</span><br><span class="line">&#125;</span><br><span class="line">char lower_E3(char str,int <span class="built_in">shift</span>)</span><br><span class="line">&#123;</span><br><span class="line">        <span class="built_in">return</span> char((str-97+<span class="built_in">shift</span>)%26+97);</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    string str =<span class="string">""</span>;//明文</span><br><span class="line">    string str1=<span class="string">""</span>;//密文</span><br><span class="line">    int <span class="built_in">shift</span> = 3;</span><br><span class="line">    cout &lt;&lt; <span class="string">"输入明文："</span>;</span><br><span class="line">    getline(cin,str);</span><br><span class="line">    cout &lt;&lt; <span class="string">"输入移位量："</span>;</span><br><span class="line">    cin &gt;&gt; <span class="built_in">shift</span>;</span><br><span class="line">    <span class="keyword">for</span>(int i =0;i&lt;str.length();i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(isalpha(str[i]))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(islower(str[i]))</span><br><span class="line">                str1 += lower_E3(str[i],<span class="built_in">shift</span>);</span><br><span class="line">            <span class="keyword">if</span>(isupper(str[i]))</span><br><span class="line">                str1 += upper_E3(str[i],<span class="built_in">shift</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            str1 += str[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">"密文："</span> &lt;&lt;str1 &lt;&lt;endl;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+<p>###<br>明文：PLEASESENDMETHEBOOKMYCREDITCARDNOISSIXONETWOONETHREEEIGHTSIXZEROONESIXEIGHTFOURNINESEVENZEROTWO<br><img src="http://q6py5t1v8.bkt.clouddn.com/%E5%AF%86%E7%A0%81%E5%AD%A6.png" alt="alt"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line">using System.Collections.Generic;</span><br><span class="line">using System.Linq;</span><br><span class="line">using System.Text;</span><br><span class="line">using System.Threading.Tasks;</span><br><span class="line"></span><br><span class="line">namespace 第三题</span><br><span class="line">&#123;</span><br><span class="line">    class Program</span><br><span class="line">    &#123;</span><br><span class="line">        static void Main(string[] args)</span><br><span class="line">        &#123;</span><br><span class="line">            int[,] A = new int[4, 4] </span><br><span class="line">            &#123; </span><br><span class="line">              &#123; 3, 13, 21, 9 &#125;, </span><br><span class="line">              &#123; 15, 10, 6, 25 &#125;, </span><br><span class="line">              &#123; 10, 17, 4, 8 &#125;,</span><br><span class="line">              &#123; 1, 23, 7, 2 &#125;</span><br><span class="line">            &#125;;</span><br><span class="line">            int[] B = new int[4] &#123; 1,21,8,17&#125;;</span><br><span class="line">            string cipher = <span class="string">"PLEASESENDMETHEBOOKMYCREDITCARDNOISSIXONETWOONETHREEEIGHTSIXZEROONESIXEIGHTFOURNINESEVENZEROTWO"</span>;</span><br><span class="line">            int[] M = new int[cipher.Length+1];</span><br><span class="line">            int[,] result = new int[4,cipher.Length];</span><br><span class="line"></span><br><span class="line">            //</span><br><span class="line">            int i = 0;</span><br><span class="line">            foreach (var item <span class="keyword">in</span> cipher)</span><br><span class="line">            &#123;</span><br><span class="line">                M[i] = item - <span class="string">'A'</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span> (i = 0; i &lt; cipher.Length; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">for</span> (int j = 0; j &lt; 4; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    result[i % 4, i / 4] += M[(i / 4) * 4 + j] * A[i % 4, j]; ;</span><br><span class="line">                &#125;</span><br><span class="line">                result[i % 4, i / 4] = (result[i % 4, i / 4]+ B[i%4])%26;</span><br><span class="line">                Console.Write((char)(<span class="string">'A'</span>+ result[i % 4, i / 4]));</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            Console.ReadLine();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
             </div>
             <hr/>
 
@@ -495,7 +489,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/03/18/hello-world/">http://yoursite.com/2020/03/18/hello-world/</a>
+                    <a href="http://yoursite.com/2020/03/05/First/cipher-md/">http://yoursite.com/2020/03/05/First/cipher-md/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -532,7 +526,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+                                    <span class="chip bg-color">密码学</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -700,32 +698,44 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/03/18/First/hello-world/">
+                <a href="/2020/03/07/First/Python/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Python">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Python</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            核桃的数量123456789a,b,c=map(int,input().split())def duan(a,b,c):    n=1    while True:        if n%a==0 and n%b==0 and n%c==
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-07
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Language/" class="post-category">
+                                    Language
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -734,28 +744,27 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                Current&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/12/First/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/">
+                <a href="/2020/03/05/First/cipher-md/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Kali虚拟机下的arp欺骗">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="cipher.md">
                         
-                        <span class="card-title">Kali虚拟机下的arp欺骗</span>
+                        <span class="card-title">cipher.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            arp攻击查看本机ip使用指令ifconfig               inet之后的便是IPV4地址
-查一下和自己在同一WiFi下的其他设备命令： fping -g -r 0 -s 192.168.31.48/24 | grep al
+                            凯撒密码123456789101112131415161718192021222324252627282930313233343536#include &lt;iostream&gt;using namespace std;char upp
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-05
                             </span>
                         <span class="publish-author">
                             
@@ -765,11 +774,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Kali-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">Kali-渗透测试</span>
+                    <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+                        <span class="chip bg-color">密码学</span>
                     </a>
                     
                 </div>
