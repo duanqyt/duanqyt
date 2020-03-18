@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>duan</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-03-08T05:55:56.155Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>duanqiao</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>First/README</title>
+    <link href="http://yoursite.com/2020/03/18/first/readme/"/>
+    <id>http://yoursite.com/2020/03/18/first/readme/</id>
+    <published>2020-03-18T01:08:07.365Z</published>
+    <updated>2020-03-08T05:55:56.155Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/03/18/hello-world/"/>
+    <id>http://yoursite.com/2020/03/18/hello-world/</id>
+    <published>2020-03-18T00:31:14.767Z</published>
+    <updated>2020-03-18T00:31:14.767Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Kali虚拟机下的arp欺骗</title>
+    <link href="http://yoursite.com/2020/03/12/first/shen-tou-ce-shi/"/>
+    <id>http://yoursite.com/2020/03/12/first/shen-tou-ce-shi/</id>
+    <published>2020-03-12T01:43:35.000Z</published>
+    <updated>2020-03-12T01:44:35.395Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;arp攻击&quot;&gt;&lt;a href=&quot;#arp攻击&quot; class=&quot;headerlink&quot; title=&quot;arp攻击&quot;&gt;&lt;/a&gt;arp攻击&lt;/h1&gt;&lt;h3 id=&quot;查看本机ip&quot;&gt;&lt;a href=&quot;#查看本机ip&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Kali-渗透测试" scheme="http://yoursite.com/tags/Kali-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BUUCTFMiscWriteup</title>
+    <link href="http://yoursite.com/2020/03/12/first/buuctfmiscwriteup/"/>
+    <id>http://yoursite.com/2020/03/12/first/buuctfmiscwriteup/</id>
+    <published>2020-03-12T01:40:49.000Z</published>
+    <updated>2020-03-12T01:41:19.102Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;金三胖&quot;&gt;&lt;a href=&quot;#金三胖&quot; class=&quot;headerlink&quot; title=&quot;金三胖&quot;&gt;&lt;/a&gt;金三胖&lt;/h2&gt;&lt;p&gt;题目链接：&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BUUCTF-Crypto</title>
+    <link href="http://yoursite.com/2020/03/10/first/buuctf-crypto/"/>
+    <id>http://yoursite.com/2020/03/10/first/buuctf-crypto/</id>
+    <published>2020-03-10T06:24:12.000Z</published>
+    <updated>2020-03-10T07:28:36.528Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Crypto&quot;&gt;&lt;a href=&quot;#Crypto&quot; class=&quot;headerlink&quot; title=&quot;Crypto&quot;&gt;&lt;/a&gt;Crypto&lt;/h3&gt;&lt;h4 id=&quot;MD5&quot;&gt;&lt;a href=&quot;#MD5&quot; class=&quot;headerlink&quot; title=&quot;MD5&quot;&gt;&lt;/a&gt;MD5&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;e00cf25ad42683b3df678c61f42c6bda&lt;/li&gt;
+&lt;li&gt;由题意知，此为md5密码，解MD5即可。&lt;/li&gt;
+&lt;li&gt;解密链接：&lt;a href=&quot;http://tool.geekapp.cn/decrypt.php&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;md5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;flag{admin1}&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>bossXiang&#39;s blog</title>
+    <link href="http://yoursite.com/2020/03/09/first/bossxiang-s-blog/"/>
+    <id>http://yoursite.com/2020/03/09/first/bossxiang-s-blog/</id>
+    <published>2020-03-09T08:10:30.000Z</published>
+    <updated>2020-03-09T08:18:32.706Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;MD5绕过&quot;&gt;&lt;a href=&quot;#MD5绕过&quot; class=&quot;headerlink&quot; title=&quot;MD5绕过&quot;&gt;&lt;/a&gt;MD5绕过&lt;/h3&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C#简易任务管理器</title>
+    <link href="http://yoursite.com/2020/03/09/first/c-jian-yi-ren-wu-guan-li-qi/"/>
+    <id>http://yoursite.com/2020/03/09/first/c-jian-yi-ren-wu-guan-li-qi/</id>
+    <published>2020-03-09T06:59:27.000Z</published>
+    <updated>2020-03-09T07:34:48.253Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;WPF完成简易任务管理器&quot;&gt;&lt;a href=&quot;#WPF完成简易任务管理器&quot; class=&quot;headerlink&quot; title=&quot;WPF完成简易任务管理器&quot;&gt;&lt;/a&gt;WPF完成简易任务管理器&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;实现进程信息的显示&lt;/li&gt;
+&lt;li&gt;结束进程&lt;/li&gt;
+&lt;li&gt;启动进程功能&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++</title>
+    <link href="http://yoursite.com/2020/03/08/first/c-1/"/>
+    <id>http://yoursite.com/2020/03/08/first/c-1/</id>
+    <published>2020-03-08T06:54:50.000Z</published>
+    <updated>2020-03-12T01:48:08.645Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h5 id=&quot;线性表&quot;&gt;&lt;a href=&quot;#线性表&quot; class=&quot;headerlink&quot; title=&quot;线性表&quot;&gt;&lt;/a&gt;线性表&lt;/h5&gt;&lt;h2 id=&quot;数据结构线性表常见操作&quot;&gt;&lt;a href=&quot;#数据结构线性表常见操作&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Language" scheme="http://yoursite.com/categories/Language/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#</title>
+    <link href="http://yoursite.com/2020/03/08/first/c/"/>
+    <id>http://yoursite.com/2020/03/08/first/c/</id>
+    <published>2020-03-08T05:40:47.000Z</published>
+    <updated>2020-03-09T08:08:47.610Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;C-实现&quot;&gt;&lt;a href=&quot;#C-实现&quot; class=&quot;headerlink&quot; title=&quot;C#实现&quot;&gt;&lt;/a&gt;C#实现&lt;/h2&gt;&lt;h5 id=&quot;A-DNS域名解析和IP地址转换的基本用法&quot;&gt;&lt;a href=&quot;#A-DNS域名解析和IP地址转换的基本用法&quot; class=&quot;headerlink&quot; title=&quot;A:DNS域名解析和IP地址转换的基本用法&quot;&gt;&lt;/a&gt;A:DNS域名解析和IP地址转换的基本用法&lt;/h5&gt;&lt;h5 id=&quot;B-获取网络适配器信息&quot;&gt;&lt;a href=&quot;#B-获取网络适配器信息&quot; class=&quot;headerlink&quot; title=&quot;B:获取网络适配器信息&quot;&gt;&lt;/a&gt;B:获取网络适配器信息&lt;/h5&gt;&lt;h5 id=&quot;C-网络流量统计&quot;&gt;&lt;a href=&quot;#C-网络流量统计&quot; class=&quot;headerlink&quot; title=&quot;C:网络流量统计&quot;&gt;&lt;/a&gt;C:网络流量统计&lt;/h5&gt;&lt;h5 id=&quot;D-退出程序&quot;&gt;&lt;a href=&quot;#D-退出程序&quot; class=&quot;headerlink&quot; title=&quot;D:退出程序&quot;&gt;&lt;/a&gt;D:退出程序&lt;/h5&gt;
+    
+    </summary>
+    
+    
+      <category term="Language" scheme="http://yoursite.com/categories/Language/"/>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python加密</title>
+    <link href="http://yoursite.com/2020/03/07/first/python-jia-mi/"/>
+    <id>http://yoursite.com/2020/03/07/first/python-jia-mi/</id>
+    <published>2020-03-07T11:08:02.000Z</published>
+    <updated>2020-03-08T05:59:16.603Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;md5加密&quot;&gt;&lt;a href=&quot;#md5加密&quot; class=&quot;headerlink&quot; title=&quot;md5加密&quot;&gt;&lt;/a&gt;md5加密&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="密码学-CTF-Python" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6-CTF-Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python</title>
+    <link href="http://yoursite.com/2020/03/07/first/python/"/>
+    <id>http://yoursite.com/2020/03/07/first/python/</id>
+    <published>2020-03-07T09:57:40.000Z</published>
+    <updated>2020-03-09T08:08:58.691Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;核桃的数量&quot;&gt;&lt;a href=&quot;#核桃的数量&quot; class=&quot;headerlink&quot; title=&quot;核桃的数量&quot;&gt;&lt;/a&gt;核桃的数量&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;a,b,c=map(int,input().split())
+def duan(a,b,c):
+    n=1
+    while True:
+        if n%a==0 and n%b==0 and n%c==0:
+            return n
+        else:
+            n+=1
+print(duan(a,b,c))&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;质因数&quot;&gt;&lt;a href=&quot;#质因数&quot; class=&quot;headerlink&quot; title=&quot;质因数&quot;&gt;&lt;/a&gt;质因数&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;lst=[]
+n = eval(input())
+def isPrime(n):
+    for i in range(2,int(pow(n,0.5))+1):
+        if n%i==0:
+            return False
+    return True
+start=2
+end=n
+while True:
+    if n%start==0 and isPrime(start):
+        lst.append(start)
+        n/=start
+    if n%start!=0:
+        start+=1
+    if start==end:
+        break
+for i in range(0,len(lst)):
+    if i==(len(lst)-1):
+        print(lst[i],end=&quot;&quot;)
+    else:
+        print(lst[i],end=&quot; &quot;)
+print()
+print(len(lst))&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;前十名&quot;&gt;&lt;a href=&quot;#前十名&quot; class=&quot;headerlink&quot; title=&quot;前十名&quot;&gt;&lt;/a&gt;前十名&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;n=eval(input())
+s=input()
+items = s.split()
+lst=[eval(x) for x in items]
+lst.sort()
+lst.reverse()
+for i in range(0,10):
+    print(lst[i],end=&#39; &#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;简单的数列排序&quot;&gt;&lt;a href=&quot;#简单的数列排序&quot; class=&quot;headerlink&quot; title=&quot;简单的数列排序&quot;&gt;&lt;/a&gt;简单的数列排序&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;n=eval(input())
+duan=[]
+str = input()
+items = str.split()
+duan = [eval(x) for x in items]        #在同一行获取多个输入
+duan.sort()
+for i in range(n):
+    print(duan[i],end=&quot; &quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;十六进制到八进制的转换&quot;&gt;&lt;a href=&quot;#十六进制到八进制的转换&quot; class=&quot;headerlink&quot; title=&quot;十六进制到八进制的转换&quot;&gt;&lt;/a&gt;十六进制到八进制的转换&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;n = eval(input())
+duan = []
+for i in range(0,n):
+    qiao= input()
+    duan.append(qiao)
+def hex_dec_oct(str2):                                                                                                                                                                                                                         
+    i = int(str2,16)
+    dq=str(oct(i))
+    return dq[2:-1]+dq[len(dq)-1]
+for i in range(n):
+    qiao=str(duan[i])
+    print(hex_dec_oct(qiao))&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;十六进制到十进制的转换&quot;&gt;&lt;a href=&quot;#十六进制到十进制的转换&quot; class=&quot;headerlink&quot; title=&quot;十六进制到十进制的转换&quot;&gt;&lt;/a&gt;十六进制到十进制的转换&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;n = input()
+def hex_dec(str1):
+    i= int(str1,16)
+    return i
+print(hex_dec(n))
+#十进制到十六进制的转换
+str1 = eval(input())
+def dec_hex(str1):
+    result=hex(str1)
+    result=result.upper()
+    return result[2:-1]+result[len(result)-1]
+print(dec_hex(str1))&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;最长字符串&quot;&gt;&lt;a href=&quot;#最长字符串&quot; class=&quot;headerlink&quot; title=&quot;最长字符串&quot;&gt;&lt;/a&gt;最长字符串&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;duan = []
+item = input().split()
+duan = [x for x in item]
+str=duan[0]
+max=len(duan[0])
+for i in range(1,5):
+    if max &amp;lt; len(duan[i]):
+        max = len(duan[i])
+        str = duan[i]
+print(str)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;求大数的质因数&quot;&gt;&lt;a href=&quot;#求大数的质因数&quot; class=&quot;headerlink&quot; title=&quot;求大数的质因数&quot;&gt;&lt;/a&gt;求大数的质因数&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;n=int(input(&quot;请输入正整数：&quot;))
+prime=int(2)
+if n==prime:
+    print(n)
+else:
+    while (n&amp;gt;=prime):
+        k=n%prime
+        if( k == 0):
+            print(prime)
+            n=n/prime
+        else:
+            prime=prime+1&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;153是一个非常特殊的数，它等于它的每位数字的立方和，即153-111-555-333。编程求所有满足这种条件的三位十进制数。&quot;&gt;&lt;a href=&quot;#153是一个非常特殊的数，它等于它的每位数字的立方和，即153-111-555-333。编程求所有满足这种条件的三位十进制数。&quot; class=&quot;headerlink&quot; title=&quot;153是一个非常特殊的数，它等于它的每位数字的立方和，即153=111+555+333。编程求所有满足这种条件的三位十进制数。&quot;&gt;&lt;/a&gt;153是一个非常特殊的数，它等于它的每位数字的立方和，即153=111+555+333。编程求所有满足这种条件的三位十进制数。&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;def isSpecialNum(n):
+    sum = 0
+    a=n//100
+    b=n%100//10
+    c=n%10
+    sum = sum + a*a*a + b*b*b+c*c*c
+    if sum == n:
+        return True
+    else:
+        return False
+for i in range(100,1000):
+    if isSpecialNum(i):
+        print(i)
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;123321是一个非常特殊的数，它从左边读和从右边读是一样的。输入一个正整数n，-编程求所有这样的五位和六位十进制数，满足各位数字之和等于n-。&quot;&gt;&lt;a href=&quot;#123321是一个非常特殊的数，它从左边读和从右边读是一样的。输入一个正整数n，-编程求所有这样的五位和六位十进制数，满足各位数字之和等于n-。&quot; class=&quot;headerlink&quot; title=&quot;123321是一个非常特殊的数，它从左边读和从右边读是一样的。输入一个正整数n， 编程求所有这样的五位和六位十进制数，满足各位数字之和等于n 。&quot;&gt;&lt;/a&gt;123321是一个非常特殊的数，它从左边读和从右边读是一样的。输入一个正整数n， 编程求所有这样的五位和六位十进制数，满足各位数字之和等于n 。&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;def isHuiWenNum(n):
+    result=str(n)[::-1]
+    if result==str(n):
+        return True
+    else:
+        return False
+def isEqual(n,check):
+    sum=0
+    b=str(n)
+    int(n)
+    duan=[]
+    for i in range(len(b)):
+        duan.append(n%10)
+        n//=10
+        sum+=duan[i]
+    if sum == check:
+        return True
+    else:
+        return False
+duan = eval(input())
+for i in range(10000,1000000):
+    if isHuiWenNum(i):
+        if isEqual(i,duan):
+            print(i)
+    else:
+        continue
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;给出一个包含n个整数的数列，问整数a在数列中的第一次出现是第几个。&quot;&gt;&lt;a href=&quot;#给出一个包含n个整数的数列，问整数a在数列中的第一次出现是第几个。&quot; class=&quot;headerlink&quot; title=&quot;给出一个包含n个整数的数列，问整数a在数列中的第一次出现是第几个。&quot;&gt;&lt;/a&gt;给出一个包含n个整数的数列，问整数a在数列中的第一次出现是第几个。&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;n = eval(input())
+duan = []
+item = input().split()
+ch = eval(input())
+duan = [eval(x) for x in item]
+index=-1
+for i in range(len(duan)):
+    if ch == duan[i]:
+        index = i
+        break
+if index != -1:
+    print(index+1)
+else:
+    print(-1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;给出n个数，找出这n个数的最大值，最小值，和。&quot;&gt;&lt;a href=&quot;#给出n个数，找出这n个数的最大值，最小值，和。&quot; class=&quot;headerlink&quot; title=&quot;给出n个数，找出这n个数的最大值，最小值，和。&quot;&gt;&lt;/a&gt;给出n个数，找出这n个数的最大值，最小值，和。&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;n = eval(input())
+duan = []
+item = input().split()
+duan = [eval(num) for num in item]
+print(max(duan))
+print(min(duan))
+print(sum(duan))
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+      <category term="Language" scheme="http://yoursite.com/categories/Language/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cipher.md</title>
+    <link href="http://yoursite.com/2020/03/05/first/cipher-md/"/>
+    <id>http://yoursite.com/2020/03/05/first/cipher-md/</id>
+    <published>2020-03-05T11:29:25.000Z</published>
+    <updated>2020-03-06T03:59:19.083Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;凯撒密码&quot;&gt;&lt;a href=&quot;#凯撒密码&quot; class=&quot;headerlink&quot; title=&quot;凯撒密码&quot;&gt;&lt;/a&gt;凯撒密码&lt;/h3&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="密码学" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+  </entry>
+  
+</feed>
