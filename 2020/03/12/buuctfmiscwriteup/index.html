@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="bossXiang&#39;s blog, duan">
+    <meta name="keywords" content="BUUCTFMiscWriteup, duan">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>bossXiang&#39;s blog | duan</title>
+    <title>BUUCTFMiscWriteup | duan</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -307,12 +307,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">bossXiang&#39;s blog</h1>
+                    <h1 class="description center-align post-title">BUUCTFMiscWriteup</h1>
                 </div>
             </div>
         </div>
@@ -427,9 +427,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/CTF/">
+                                <span class="chip bg-color">CTF</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -441,7 +445,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-09
+                    2020-03-12
                 </div>
                 
 
@@ -458,23 +462,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <a id="more"></a>
-<h3 id="MD5绕过"><a href="#MD5绕过" class="headerlink" title="MD5绕过"></a>MD5绕过</h3><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>?php
-<span class="token variable">$md51</span> <span class="token operator">=</span> md5<span class="token punctuation">(</span><span class="token string">'240610708'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token variable">$a</span> <span class="token operator">=</span> @<span class="token variable">$_GET</span><span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token variable">$md52</span> <span class="token operator">=</span> @md5<span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>isset<span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">))</span>
-<span class="token punctuation">{</span>
-    if<span class="token punctuation">(</span><span class="token variable">$a</span> <span class="token operator">!=</span> <span class="token string">'QNKCDZO'</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">$md51</span><span class="token operator">==</span><span class="token variable">$md52</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">echo</span> <span class="token variable">$flag</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">else</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">echo</span> <span class="token string">"false!!!"</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-?<span class="token operator">></span></code></pre>
+                <h2 id="金三胖"><a href="#金三胖" class="headerlink" title="金三胖"></a>金三胖</h2><p>题目链接：<a href="https://buuoj.cn/challenges#%E9%87%91%E4%B8%89%E8%83%96" target="_blank" rel="noopener">https://buuoj.cn/challenges#%E9%87%91%E4%B8%89%E8%83%96</a><br>思路：用PhotoShop查看图层，会找到三张上边含有flag信息的.</p>
+<h2 id="二维码"><a href="#二维码" class="headerlink" title="二维码"></a>二维码</h2><p>题目链接：<a href="https://buuoj.cn/challenges#%E4%BA%8C%E7%BB%B4%E7%A0%81" target="_blank" rel="noopener">https://buuoj.cn/challenges#%E4%BA%8C%E7%BB%B4%E7%A0%81</a><br>思路：binwalk 分析二维码图片，然后分解，得到<img src="https://img-blog.csdnimg.cn/20200117180949393.png" alt="在这里插入图片描述"><br>根据提示：密码为4位数字<br>用ziperello跑一下<img src="https://img-blog.csdnimg.cn/20200117181433909.png" alt="在这里插入图片描述"><br>然后解压得到<img src="https://img-blog.csdnimg.cn/20200117181512807.png" alt="在这里插入图片描述"><br>注意：题上说flag{}形式。改一下。</p>
+<h2 id="大白"><a href="#大白" class="headerlink" title="大白"></a>大白</h2><p>题目链接：<a href="https://buuoj.cn/challenges#%E5%A4%A7%E7%99%BD" target="_blank" rel="noopener">https://buuoj.cn/challenges#%E5%A4%A7%E7%99%BD</a><br>思路：目测高度不够，查一下高度和宽的的16进制，改一下，看到flag.</p>
+<h2 id="基础破解"><a href="#基础破解" class="headerlink" title="基础破解"></a>基础破解</h2><p>题目链接：<a href="https://buuoj.cn/challenges#%E5%9F%BA%E7%A1%80%E7%A0%B4%E8%A7%A3" target="_blank" rel="noopener">https://buuoj.cn/challenges#%E5%9F%BA%E7%A1%80%E7%A0%B4%E8%A7%A3</a><br>思路：<img src="https://img-blog.csdnimg.cn/2020011718212620.png" alt="在这里插入图片描述"><br>用<br><img src="https://img-blog.csdnimg.cn/20200117182143275.png" alt=""><br>跑一下。</p>
+<h2 id="你竟然赶我走"><a href="#你竟然赶我走" class="headerlink" title="你竟然赶我走"></a>你竟然赶我走</h2><p>题目链接：<a href="https://buuoj.cn/challenges" target="_blank" rel="noopener">https://buuoj.cn/challenges</a><br>思路：<br>直接扔到WinHex里查找flag,得到如下<br><img src="https://img-blog.csdnimg.cn/20200117182630180.png" alt="在这里插入图片描述"></p>
+<h2 id="乌镇峰会种图"><a href="#乌镇峰会种图" class="headerlink" title="乌镇峰会种图"></a>乌镇峰会种图</h2><p>题目链接：<a href="https://buuoj.cn/challenges#%E4%B9%8C%E9%95%87%E5%B3%B0%E4%BC%9A%E7%A7%8D%E5%9B%BE" target="_blank" rel="noopener">https://buuoj.cn/challenges#%E4%B9%8C%E9%95%87%E5%B3%B0%E4%BC%9A%E7%A7%8D%E5%9B%BE</a><br>思路：<br>直接扔到WinHex里边，查找flag得到<img src="https://img-blog.csdnimg.cn/20200117182857164.png" alt="在这里插入图片描述"></p>
+<h2 id="rar"><a href="#rar" class="headerlink" title="rar"></a>rar</h2><p>题目链接：<a href="https://buuoj.cn/challenges#rar" target="_blank" rel="noopener">https://buuoj.cn/challenges#rar</a><br>思路：直接解压缩，得到.rar的压缩包，然后用ARPR跑一下，四位数字密码<img src="https://img-blog.csdnimg.cn/20200117183724323.png" alt="在这里插入图片描述">。</p>
+<h2 id="ningen"><a href="#ningen" class="headerlink" title="ningen"></a>ningen</h2><p>题目链接：<a href="https://buuoj.cn/challenges#ningen" target="_blank" rel="noopener">https://buuoj.cn/challenges#ningen</a><br>思路：binwalk分析然后分离，得到9271.zip，然后用<br><img src="https://img-blog.csdnimg.cn/20200117183925934.png" alt="在这里插入图片描述">跑一下。<br><img src="https://img-blog.csdnimg.cn/20200117184019489.png" alt="在这里插入图片描述"><br>flag{b025fc9ca797a67d2103bfbc407a6d5f}<br>只是一些入门的CTF，欢迎大家发表意见。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -518,7 +513,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/03/09/first/bossxiang-s-blog/">http://yoursite.com/2020/03/09/first/bossxiang-s-blog/</a>
+                    <a href="http://yoursite.com/2020/03/12/buuctfmiscwriteup/">http://yoursite.com/2020/03/12/buuctfmiscwriteup/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -555,7 +550,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/CTF/">
+                                    <span class="chip bg-color">CTF</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -723,7 +722,53 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/10/first/buuctf-crypto/">
+                <a href="/2020/03/12/shen-tou-ce-shi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Kali虚拟机下的arp欺骗">
+                        
+                        <span class="card-title">Kali虚拟机下的arp欺骗</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            arp攻击查看本机ip使用指令ifconfig               inet之后的便是IPV4地址
+查一下和自己在同一WiFi下的其他设备命令： fping -g -r 0 -s 192.168.31.48/24 | grep al
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-12
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            duanqiao
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Kali-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">Kali-渗透测试</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/03/10/buuctf-crypto/">
                     <div class="card-image">
                         
                         
@@ -745,9 +790,9 @@ synt{5pq1004q-86n5-46q8-o720
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -761,59 +806,6 @@ synt{5pq1004q-86n5-46q8-o720
                     
                     <a href="/tags/CTF/">
                         <span class="chip bg-color">CTF</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/03/09/first/c-jian-yi-ren-wu-guan-li-qi/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="C#简易任务管理器">
-                        
-                        <span class="card-title">C#简易任务管理器</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            WPF完成简易任务管理器
-实现进程信息的显示
-结束进程
-启动进程功能
-程序入口
-
-主窗体布局界面
-主窗体布局代码(XML)&lt;Window x:Class="任务管理器作业.MainWindow"
-        xmlns="http
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-09
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            duanqiao
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C#</span>
                     </a>
                     
                 </div>

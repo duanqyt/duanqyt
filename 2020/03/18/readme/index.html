@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python加密, duan">
+    <meta name="keywords" content="README, duan">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Python加密 | duan</title>
+    <title>README | duan</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -307,12 +307,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python加密</h1>
+                    <h1 class="description center-align post-title">README</h1>
                 </div>
             </div>
         </div>
@@ -427,13 +427,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6-CTF-Python/">
-                                <span class="chip bg-color">密码学-CTF-Python</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -445,7 +441,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-07
+                    2020-03-18
                 </div>
                 
 
@@ -462,107 +458,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="md5加密"><a href="#md5加密" class="headerlink" title="md5加密"></a>md5加密</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">import</span> hashlib
-<span class="token comment" spellcheck="true"># 待加密信息</span>
-str <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"密文(字符串)："</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 创建md5对象</span>
-m <span class="token operator">=</span> hashlib.md5<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># Tips</span>
-<span class="token comment" spellcheck="true"># 此处必须encode</span>
-<span class="token comment" spellcheck="true"># 若写法为m.update(str)  报错为： Unicode-objects must be encoded before hashing</span>
-<span class="token comment" spellcheck="true"># 因为python3里默认的str是unicode</span>
-<span class="token comment" spellcheck="true"># 或者 b = bytes(str, encoding='utf-8')，作用相同，都是encode为bytes</span>
-b <span class="token operator">=</span> str.encode<span class="token punctuation">(</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
-m.update<span class="token punctuation">(</span>b<span class="token punctuation">)</span>
-str_md5 <span class="token operator">=</span> m.hexdigest<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-print<span class="token punctuation">(</span><span class="token string">'MD5加密前为 ：'</span> + str<span class="token punctuation">)</span>
-print<span class="token punctuation">(</span><span class="token string">'MD5加密后为 ：'</span> + str_md5<span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 另一种写法：b‘’前缀代表的就是bytes</span>
-<span class="token comment" spellcheck="true">#str_md5 = hashlib.md5(b'this is a md5 test.').hexdigest()</span>
-<span class="token comment" spellcheck="true">#print('MD5加密后为 ：' + str_md5)</span>
-</code></pre>
-<h2 id="ASCLL码移位加密"><a href="#ASCLL码移位加密" class="headerlink" title="ASCLL码移位加密"></a>ASCLL码移位加密</h2><pre class=" language-bash"><code class="language-bash">s<span class="token operator">=</span>input<span class="token punctuation">(</span><span class="token string">"密文(字符串类型)："</span><span class="token punctuation">)</span>
-key <span class="token operator">=</span> eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"偏移(int)："</span><span class="token punctuation">))</span>
-result<span class="token operator">=</span><span class="token string">""</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>s<span class="token punctuation">))</span>:
-    <span class="token keyword">if</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span>.isalpha<span class="token punctuation">(</span><span class="token punctuation">)</span>:
-        <span class="token keyword">if</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span>.islower<span class="token punctuation">(</span><span class="token punctuation">)</span>:
-            result+<span class="token operator">=</span>chr<span class="token punctuation">(</span>97+<span class="token punctuation">(</span>ord<span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>-97+key<span class="token punctuation">)</span>%26<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#小写</span>
-
-        else:
-            result+<span class="token operator">=</span>chr<span class="token punctuation">(</span>65+<span class="token punctuation">(</span>ord<span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>-65+key<span class="token punctuation">)</span>%26<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#大写</span>
-
-    else:
-        result+<span class="token operator">=</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span>                               <span class="token comment" spellcheck="true">#字母以外的不变</span>
-print<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
-
-</code></pre>
-<h2 id="残缺的哈希"><a href="#残缺的哈希" class="headerlink" title="残缺的哈希"></a>残缺的哈希</h2><pre class=" language-bash"><code class="language-bash">from io <span class="token function">import</span> StringIO
-<span class="token function">import</span> hashlib
-<span class="token function">import</span> operator
-<span class="token function">import</span> base64
-m <span class="token operator">=</span> hashlib.md5<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#创建md5对象</span>
-def md5_1<span class="token punctuation">(</span>stra<span class="token punctuation">)</span>:
-        b <span class="token operator">=</span> stra.encode<span class="token punctuation">(</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
-        m.update<span class="token punctuation">(</span>b<span class="token punctuation">)</span>
-        stra<span class="token operator">=</span>m.hexdigest<span class="token punctuation">(</span><span class="token punctuation">)</span>
-        print<span class="token punctuation">(</span>stra<span class="token punctuation">)</span>
-seed<span class="token operator">=</span><span class="token string">"1234567890abcdefghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"</span> 
-def get_pwd<span class="token punctuation">(</span>str, num<span class="token punctuation">)</span>:  
-        if<span class="token punctuation">(</span>num <span class="token operator">==</span> 1<span class="token punctuation">)</span>:  
-            <span class="token keyword">for</span> x <span class="token keyword">in</span> str:  
-                yield x  
-        else:  
-            <span class="token keyword">for</span> x <span class="token keyword">in</span> str:  
-                <span class="token keyword">for</span> y <span class="token keyword">in</span> get_pwd<span class="token punctuation">(</span>str, num-1<span class="token punctuation">)</span>:
-                    yield x+y                 
-
-strKey<span class="token operator">=</span><span class="token string">"1234567890abcdefghijklmnoopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"</span> 
-<span class="token keyword">for</span> x <span class="token keyword">in</span> get_pwd<span class="token punctuation">(</span>strKey,4<span class="token punctuation">)</span>:  
-    stra<span class="token operator">=</span>x
-    m2 <span class="token operator">=</span> hashlib.md5<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    m2.update<span class="token punctuation">(</span>stra.encode<span class="token punctuation">(</span><span class="token string">"utf-8"</span><span class="token punctuation">))</span> 
-    stra2<span class="token operator">=</span>m2.hexdigest<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>stra2<span class="token punctuation">[</span>:10<span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">"c2979c7124"</span><span class="token punctuation">)</span>:
-        print<span class="token punctuation">(</span><span class="token string">"flag{"</span>+stra+<span class="token string">"}"</span><span class="token punctuation">)</span>
-        md5_1<span class="token punctuation">(</span>stra<span class="token punctuation">)</span>
-        <span class="token keyword">break</span>
-
-</code></pre>
-<h2 id="还原大师"><a href="#还原大师" class="headerlink" title="还原大师"></a>还原大师</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">import</span> hashlib
-strKey1<span class="token operator">=</span><span class="token string">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span> 
-<span class="token keyword">for</span> ch1 <span class="token keyword">in</span> strKey1:
-    <span class="token keyword">for</span> ch2 <span class="token keyword">in</span> strKey1:
-        <span class="token keyword">for</span> ch3 <span class="token keyword">in</span> strKey1:
-            stra<span class="token operator">=</span><span class="token string">"TASC"</span>+ch1+<span class="token string">"O3RJMV"</span>+ch2+<span class="token string">"WDJKX"</span>+ch3+<span class="token string">"ZM"</span>
-            m2 <span class="token operator">=</span> hashlib.md5<span class="token punctuation">(</span><span class="token punctuation">)</span>
-            m2.update<span class="token punctuation">(</span>stra.encode<span class="token punctuation">(</span><span class="token string">"utf-8"</span><span class="token punctuation">))</span> 
-            stra2<span class="token operator">=</span>m2.hexdigest<span class="token punctuation">(</span><span class="token punctuation">)</span>.upper<span class="token punctuation">(</span><span class="token punctuation">)</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>stra2<span class="token punctuation">[</span>:4<span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">"E903"</span> and stra2<span class="token punctuation">[</span>7:11<span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">"4DAB"</span><span class="token punctuation">)</span>:
-                print<span class="token punctuation">(</span>stra<span class="token punctuation">)</span>
-                print<span class="token punctuation">(</span>stra2<span class="token punctuation">)</span>
-                <span class="token keyword">break</span></code></pre>
-<h2 id="一张谍报"><a href="#一张谍报" class="headerlink" title="一张谍报"></a>一张谍报</h2><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#-*- coding:gbk -*-</span>
-<span class="token function">import</span> sys
-reload<span class="token punctuation">(</span>sys<span class="token punctuation">)</span>
-sys.setdefaultencoding<span class="token punctuation">(</span><span class="token string">'gbk'</span><span class="token punctuation">)</span>
-strs1 <span class="token operator">=</span> <span class="token string">"今天上午，朝歌区梆子公司决定，在每天三更天不亮免费在各大小区门口设卡为全城提供二次震耳欲聋的敲更提醒，呼吁大家早睡早起，不要因为贪睡断送大好人生，时代的符号是前进。为此，全区老人都蹲在该公司东边树丛合力抵制，不给公司人员放行，场面混乱。李罗鹰住进朝歌区五十年了，人称老鹰头，几年孙子李虎南刚从东北当猎户回来，每月还寄回来几块鼹鼠干。李罗鹰当年遇到的老婆是朝歌一枝花，所以李南虎是长得非常秀气的一个汉子。李罗鹰表示：无论梆子公司做的对错，反正不能打扰他孙子睡觉，子曰：‘睡觉乃人之常情’。梆子公司这是连菩萨睡觉都不放过啊。李南虎表示：梆子公司智商捉急，小心居民猴急跳墙！这三伏天都不给睡觉，这不扯淡么！到了中午人群仍未离散，更有人提议要烧掉这个公司，公司高层似乎恨不得找个洞钻进去。直到治安人员出现才疏散人群归家，但是李南虎仍旧表示爷爷年纪大了，睡不好对身体不好。"</span>
-strs2 <span class="token operator">=</span> <span class="token string">"喵天上午，汪歌区哞叽公司决定，在每天八哇天不全免费在各大小区门脑设卡为全城提供双次震耳欲聋的敲哇提醒，呼吁大家早睡早起，不要因为贪睡断送大好人生，时代的编号是前进。为此，全区眠人都足在该公司流边草丛合力抵制，不给公司人员放行，场面混乱。李罗鸟住进汪歌区五十年了，人称眠鸟顶，几年孙叽李熬值刚从流北当屁户回来，每月还寄回来几块报信干。李罗鸟当年遇到的眠婆是汪歌一枝花，所以李值熬是长得非常秀气的一个汉叽。李罗鸟表示：无论哞叽公司做的对错，反正不能打扰他孙叽睡觉，叽叶：‘睡觉乃人之常情’。哞叽公司这是连衣服睡觉都不放过啊。李值熬表示：哞叽公司智商捉急，小心居民猴急跳墙！这八伏天都不给睡觉，这不扯淡么！到了中午人群仍未离散，哇有人提议要烧掉这个公司，公司高层似乎恨不得找个洞钻进去。直到治安人员出现才疏散人群归家，但是李值熬仍旧表示爷爷年纪大了，睡不好对身体不好。"</span>
-strs3 <span class="token operator">=</span> <span class="token string">"喵汪哞叽双哇顶，眠鸟足屁流脑，八哇报信断流脑全叽，眠鸟进北脑上草，八枝遇孙叽，孙叽对熬编叶：值天衣服放鸟捉猴顶。鸟对：北汪罗汉伏熬乱天门。合编放行，卡编扯呼。人离烧草，报信归洞，孙叽找爷爷。"</span>
-strs1 <span class="token operator">=</span> unicode<span class="token punctuation">(</span>strs1,<span class="token string">"gbk"</span><span class="token punctuation">)</span>
-strs2 <span class="token operator">=</span> unicode<span class="token punctuation">(</span>strs2,<span class="token string">"gbk"</span><span class="token punctuation">)</span>
-strs3 <span class="token operator">=</span> unicode<span class="token punctuation">(</span>strs3,<span class="token string">"gbk"</span><span class="token punctuation">)</span>
-res <span class="token operator">=</span> <span class="token string">""</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>strs3<span class="token punctuation">))</span>:
-    <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>strs2<span class="token punctuation">))</span>:
-        <span class="token keyword">if</span> strs3<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> strs2<span class="token punctuation">[</span>j<span class="token punctuation">]</span>:
-            res +<span class="token operator">=</span> strs1<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
-            <span class="token keyword">break</span>
-print res</code></pre>
-<script>
+                <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -605,7 +501,7 @@ print res</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/03/07/first/python-jia-mi/">http://yoursite.com/2020/03/07/first/python-jia-mi/</a>
+                    <a href="http://yoursite.com/2020/03/18/readme/">http://yoursite.com/2020/03/18/readme/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -642,11 +538,7 @@ print res</code></pre>
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6-CTF-Python/">
-                                    <span class="chip bg-color">密码学-CTF-Python</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -810,53 +702,42 @@ print res</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/08/first/c/">
+                <a href="/2020/03/18/readme/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="C#">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="README">
                         
-                        <span class="card-title">C#</span>
+                        <span class="card-title">README</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            C#实现A:DNS域名解析和IP地址转换的基本用法B:获取网络适配器信息C:网络流量统计D:退出程序
-using System;
-using System.Text;
-using System.Net;
-using System.Net.N
+                            
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Language/" class="post-category">
-                                    Language
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            duanqiao
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C#</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -867,49 +748,32 @@ using System.Net.N
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/07/first/python/">
+                <a href="/2020/03/18/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Python">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">Python</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            核桃的数量a,b,c=map(int,input().split())
-def duan(a,b,c):
-    n=1
-    while True:
-        if n%a==0 and n%b==0 and n%c==0:
-  
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Language/" class="post-category">
-                                    Language
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            duanqiao
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
                 </div>
                 
             </div>

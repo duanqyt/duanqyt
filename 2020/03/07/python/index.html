@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="BUUCTF-Crypto, duan">
+    <meta name="keywords" content="Python, duan">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>BUUCTF-Crypto | duan</title>
+    <title>Python | duan</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -307,12 +307,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">BUUCTF-Crypto</h1>
+                    <h1 class="description center-align post-title">Python</h1>
                 </div>
             </div>
         </div>
@@ -429,14 +429,23 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/CTF/">
-                                <span class="chip bg-color">CTF</span>
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Language/" class="post-category">
+                                Language
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -445,7 +454,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-10
+                    2020-03-07
                 </div>
                 
 
@@ -462,99 +471,168 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Crypto"><a href="#Crypto" class="headerlink" title="Crypto"></a>Crypto</h3><h4 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h4><ul>
-<li>e00cf25ad42683b3df678c61f42c6bda</li>
-<li>由题意知，此为md5密码，解MD5即可。</li>
-<li>解密链接：<a href="http://tool.geekapp.cn/decrypt.php" target="_blank" rel="noopener">md5</a></li>
-<li>flag{admin1}<a id="more"></a>
-<h4 id="看我回旋踢"><a href="#看我回旋踢" class="headerlink" title="看我回旋踢"></a>看我回旋踢</h4></li>
-<li>synt{5pq1004q-86n5-46q8-o720-oro5on0417r1}</li>
-<li>由题意知，可为凯撒密码，写程序即可解密</li>
-<li>解密程序</li>
-</ul>
-<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#include &lt;iostream></span>
-<span class="token comment" spellcheck="true">#include&lt;string></span>
-using namespace std<span class="token punctuation">;</span>
-char upper_E3<span class="token punctuation">(</span>char str,int shift<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-        <span class="token keyword">return</span> char<span class="token punctuation">((</span>str-65+shift<span class="token punctuation">)</span>%26+65<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-char lower_E3<span class="token punctuation">(</span>char str,int shift<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-        <span class="token keyword">return</span> char<span class="token punctuation">((</span>str-97+shift<span class="token punctuation">)</span>%26+97<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-int main<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    string str <span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">;</span>//明文
-    string str1<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">;</span>//密文
-    int <span class="token function">shift</span> <span class="token operator">=</span> 0<span class="token punctuation">;</span>
-    cout  <span class="token operator">&lt;&lt;</span> <span class="token string">"输入明文："</span><span class="token punctuation">;</span>
-    getline<span class="token punctuation">(</span>cin,str<span class="token punctuation">)</span><span class="token punctuation">;</span>
-   /* cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入移位量："</span><span class="token punctuation">;</span>
-    cin <span class="token operator">>></span> <span class="token function">shift</span><span class="token punctuation">;</span>*/
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>1<span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        str1 <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span>int i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str.length<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i++<span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>isalpha<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">))</span>
-            <span class="token punctuation">{</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span>islower<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">))</span>
-                    str1 +<span class="token operator">=</span> lower_E3<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span>, shift<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">if</span> <span class="token punctuation">(</span>isupper<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">))</span>
-                    str1 +<span class="token operator">=</span> upper_E3<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span>, shift<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-            <span class="token keyword">else</span>
-            <span class="token punctuation">{</span>
-                str1 +<span class="token operator">=</span> str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"密文："</span> <span class="token operator">&lt;&lt;</span> str1 <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-        if<span class="token punctuation">(</span>str1<span class="token punctuation">[</span>0<span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">'f'</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token keyword">break</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        shift++<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<ul>
-<li>flag{5cd1004d-86a5-46d8-b720-beb5ba0417e1}</li>
-</ul>
-<h4 id="url编码"><a href="#url编码" class="headerlink" title="url编码"></a>url编码</h4><ul>
-<li>%66%6c%61%67%7b%61%6e%64%20%31%3d%31%7d</li>
-<li>由题意知此为URL编码，找到对应的解密工具即可</li>
-<li>解密链接：<a href="http://tool.chinaz.com/tools/urlencode.aspx" target="_blank" rel="noopener">url编码</a></li>
-<li>flag{and 1=1}<h4 id="一眼就解密"><a href="#一眼就解密" class="headerlink" title="一眼就解密"></a>一眼就解密</h4></li>
-<li>ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30= </li>
-<li>可看出此为base64密码</li>
-<li>解密链接：<a href="https://www.sojson.com/base64.html" target="_blank" rel="noopener">base64</a></li>
-<li>flag{THE_FLAG_OF_THIS_STRING}<h4 id="摩斯"><a href="#摩斯" class="headerlink" title="摩斯"></a>摩斯</h4></li>
-<li>.. .-.. — …- . -.– — ..-</li>
-<li>显而易见此为摩斯密码</li>
-<li>解密链接：<a href="https://www.jb51.net/tools/morse.htm" target="_blank" rel="noopener">摩斯</a></li>
-<li>flag{ILOVEYOU}<h4 id="变异凯撒"><a href="#变异凯撒" class="headerlink" title="变异凯撒"></a>变异凯撒</h4></li>
-<li>afZ_r9VYfScOeO_UL^RWUc</li>
-<li>首先要明白，凯撒密码轮转的规则，然后从题不难发现以下规律:<pre><code>  a-------f       +5
-  f-------l       +6</code></pre>按照此规律去编写代码如下：</li>
-<li>Python解密<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 定义解密函数</span>
-def decode<span class="token punctuation">(</span>cipher,shift<span class="token punctuation">)</span>:
-  flag<span class="token operator">=</span><span class="token string">""</span>
-  <span class="token keyword">for</span> item <span class="token keyword">in</span> cipher:
-      m <span class="token operator">=</span> ord<span class="token punctuation">(</span>item<span class="token punctuation">)</span>          <span class="token comment" spellcheck="true">#得到密文中每个字符的ascll值</span>
-      m +<span class="token operator">=</span> <span class="token function">shift</span>             <span class="token comment" spellcheck="true">#加上偏移量</span>
-      m %<span class="token operator">=</span> 128               <span class="token comment" spellcheck="true">#防止越界</span>
-      flag+<span class="token operator">=</span>chr<span class="token punctuation">(</span>m<span class="token punctuation">)</span>           
-      <span class="token function">shift</span> +<span class="token operator">=</span> 1
-  <span class="token keyword">return</span> flag
-shift<span class="token operator">=</span>5
-cipher<span class="token operator">=</span>input<span class="token punctuation">(</span><span class="token string">"密文："</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true">#输入密文</span>
-flag<span class="token operator">=</span>decode<span class="token punctuation">(</span>cipher,shift<span class="token punctuation">)</span>
-print<span class="token punctuation">(</span>flag<span class="token punctuation">)</span></code></pre>
-</li>
-<li>flag{Caesar_variation}<h4 id=""><a href="#" class="headerlink" title=""></a></h4></li>
-</ul>
-<script>
+                <h2 id="核桃的数量"><a href="#核桃的数量" class="headerlink" title="核桃的数量"></a>核桃的数量</h2><pre class=" language-bash"><code class="language-bash">a,b,c<span class="token operator">=</span>map<span class="token punctuation">(</span>int,input<span class="token punctuation">(</span><span class="token punctuation">)</span>.split<span class="token punctuation">(</span><span class="token punctuation">))</span>
+def duan<span class="token punctuation">(</span>a,b,c<span class="token punctuation">)</span>:
+    n<span class="token operator">=</span>1
+    <span class="token keyword">while</span> True:
+        <span class="token keyword">if</span> n%a<span class="token operator">==</span>0 and n%b<span class="token operator">==</span>0 and n%c<span class="token operator">==</span>0:
+            <span class="token keyword">return</span> n
+        else:
+            n+<span class="token operator">=</span>1
+print<span class="token punctuation">(</span>duan<span class="token punctuation">(</span>a,b,c<span class="token punctuation">))</span></code></pre>
+<h2 id="质因数"><a href="#质因数" class="headerlink" title="质因数"></a>质因数</h2><pre class=" language-bash"><code class="language-bash">lst<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+n <span class="token operator">=</span> eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">))</span>
+def isPrime<span class="token punctuation">(</span>n<span class="token punctuation">)</span>:
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>2,int<span class="token punctuation">(</span>pow<span class="token punctuation">(</span>n,0.5<span class="token punctuation">))</span>+1<span class="token punctuation">)</span>:
+        <span class="token keyword">if</span> n%i<span class="token operator">==</span>0:
+            <span class="token keyword">return</span> False
+    <span class="token keyword">return</span> True
+start<span class="token operator">=</span>2
+end<span class="token operator">=</span>n
+<span class="token keyword">while</span> True:
+    <span class="token keyword">if</span> n%start<span class="token operator">==</span>0 and isPrime<span class="token punctuation">(</span>start<span class="token punctuation">)</span>:
+        lst.append<span class="token punctuation">(</span>start<span class="token punctuation">)</span>
+        n/<span class="token operator">=</span>start
+    <span class="token keyword">if</span> n%start<span class="token operator">!=</span>0:
+        start+<span class="token operator">=</span>1
+    <span class="token keyword">if</span> start<span class="token operator">==</span>end:
+        <span class="token keyword">break</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>0,len<span class="token punctuation">(</span>lst<span class="token punctuation">))</span>:
+    <span class="token keyword">if</span> i<span class="token operator">==</span><span class="token punctuation">(</span>len<span class="token punctuation">(</span>lst<span class="token punctuation">)</span>-1<span class="token punctuation">)</span>:
+        print<span class="token punctuation">(</span>lst<span class="token punctuation">[</span>i<span class="token punctuation">]</span>,end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span>
+    else:
+        print<span class="token punctuation">(</span>lst<span class="token punctuation">[</span>i<span class="token punctuation">]</span>,end<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span>
+print<span class="token punctuation">(</span><span class="token punctuation">)</span>
+print<span class="token punctuation">(</span>len<span class="token punctuation">(</span>lst<span class="token punctuation">))</span></code></pre>
+<h2 id="前十名"><a href="#前十名" class="headerlink" title="前十名"></a>前十名</h2><pre class=" language-bash"><code class="language-bash">n<span class="token operator">=</span>eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">))</span>
+s<span class="token operator">=</span>input<span class="token punctuation">(</span><span class="token punctuation">)</span>
+items <span class="token operator">=</span> s.split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+lst<span class="token operator">=</span><span class="token punctuation">[</span>eval<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> items<span class="token punctuation">]</span>
+lst.sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+lst.reverse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>0,10<span class="token punctuation">)</span>:
+    print<span class="token punctuation">(</span>lst<span class="token punctuation">[</span>i<span class="token punctuation">]</span>,end<span class="token operator">=</span><span class="token string">' '</span><span class="token punctuation">)</span></code></pre>
+<h2 id="简单的数列排序"><a href="#简单的数列排序" class="headerlink" title="简单的数列排序"></a>简单的数列排序</h2><pre class=" language-bash"><code class="language-bash">n<span class="token operator">=</span>eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">))</span>
+duan<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+str <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>
+items <span class="token operator">=</span> str.split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+duan <span class="token operator">=</span> <span class="token punctuation">[</span>eval<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> items<span class="token punctuation">]</span>        <span class="token comment" spellcheck="true">#在同一行获取多个输入</span>
+duan.sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span>:
+    print<span class="token punctuation">(</span>duan<span class="token punctuation">[</span>i<span class="token punctuation">]</span>,end<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span></code></pre>
+<h2 id="十六进制到八进制的转换"><a href="#十六进制到八进制的转换" class="headerlink" title="十六进制到八进制的转换"></a>十六进制到八进制的转换</h2><pre class=" language-bash"><code class="language-bash">n <span class="token operator">=</span> eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">))</span>
+duan <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>0,n<span class="token punctuation">)</span>:
+    qiao<span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    duan.append<span class="token punctuation">(</span>qiao<span class="token punctuation">)</span>
+def hex_dec_oct<span class="token punctuation">(</span>str2<span class="token punctuation">)</span>:                                                                                                                                                                                                                         
+    i <span class="token operator">=</span> int<span class="token punctuation">(</span>str2,16<span class="token punctuation">)</span>
+    dq<span class="token operator">=</span>str<span class="token punctuation">(</span>oct<span class="token punctuation">(</span>i<span class="token punctuation">))</span>
+    <span class="token keyword">return</span> dq<span class="token punctuation">[</span>2:-1<span class="token punctuation">]</span>+dq<span class="token punctuation">[</span>len<span class="token punctuation">(</span>dq<span class="token punctuation">)</span>-1<span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span>:
+    qiao<span class="token operator">=</span>str<span class="token punctuation">(</span>duan<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    print<span class="token punctuation">(</span>hex_dec_oct<span class="token punctuation">(</span>qiao<span class="token punctuation">))</span></code></pre>
+<h2 id="十六进制到十进制的转换"><a href="#十六进制到十进制的转换" class="headerlink" title="十六进制到十进制的转换"></a>十六进制到十进制的转换</h2><pre class=" language-bash"><code class="language-bash">n <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>
+def hex_dec<span class="token punctuation">(</span>str1<span class="token punctuation">)</span>:
+    i<span class="token operator">=</span> int<span class="token punctuation">(</span>str1,16<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> i
+print<span class="token punctuation">(</span>hex_dec<span class="token punctuation">(</span>n<span class="token punctuation">))</span>
+<span class="token comment" spellcheck="true">#十进制到十六进制的转换</span>
+str1 <span class="token operator">=</span> eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">))</span>
+def dec_hex<span class="token punctuation">(</span>str1<span class="token punctuation">)</span>:
+    result<span class="token operator">=</span>hex<span class="token punctuation">(</span>str1<span class="token punctuation">)</span>
+    result<span class="token operator">=</span>result.upper<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">[</span>2:-1<span class="token punctuation">]</span>+result<span class="token punctuation">[</span>len<span class="token punctuation">(</span>result<span class="token punctuation">)</span>-1<span class="token punctuation">]</span>
+print<span class="token punctuation">(</span>dec_hex<span class="token punctuation">(</span>str1<span class="token punctuation">))</span></code></pre>
+<h2 id="最长字符串"><a href="#最长字符串" class="headerlink" title="最长字符串"></a>最长字符串</h2><pre class=" language-bash"><code class="language-bash">duan <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+item <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>.split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+duan <span class="token operator">=</span> <span class="token punctuation">[</span>x <span class="token keyword">for</span> x <span class="token keyword">in</span> item<span class="token punctuation">]</span>
+str<span class="token operator">=</span>duan<span class="token punctuation">[</span>0<span class="token punctuation">]</span>
+max<span class="token operator">=</span>len<span class="token punctuation">(</span>duan<span class="token punctuation">[</span>0<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>1,5<span class="token punctuation">)</span>:
+    <span class="token keyword">if</span> max <span class="token operator">&lt;</span> len<span class="token punctuation">(</span>duan<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>:
+        max <span class="token operator">=</span> len<span class="token punctuation">(</span>duan<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        str <span class="token operator">=</span> duan<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+print<span class="token punctuation">(</span>str<span class="token punctuation">)</span>
+</code></pre>
+<h2 id="求大数的质因数"><a href="#求大数的质因数" class="headerlink" title="求大数的质因数"></a>求大数的质因数</h2><pre class=" language-bash"><code class="language-bash">n<span class="token operator">=</span>int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"请输入正整数："</span><span class="token punctuation">))</span>
+prime<span class="token operator">=</span>int<span class="token punctuation">(</span>2<span class="token punctuation">)</span>
+<span class="token keyword">if</span> n<span class="token operator">==</span>prime:
+    print<span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+else:
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>n<span class="token operator">>=</span>prime<span class="token punctuation">)</span>:
+        k<span class="token operator">=</span>n%prime
+        if<span class="token punctuation">(</span> k <span class="token operator">==</span> 0<span class="token punctuation">)</span>:
+            print<span class="token punctuation">(</span>prime<span class="token punctuation">)</span>
+            n<span class="token operator">=</span>n/prime
+        else:
+            prime<span class="token operator">=</span>prime+1</code></pre>
+<h2 id="153是一个非常特殊的数，它等于它的每位数字的立方和，即153-111-555-333。编程求所有满足这种条件的三位十进制数。"><a href="#153是一个非常特殊的数，它等于它的每位数字的立方和，即153-111-555-333。编程求所有满足这种条件的三位十进制数。" class="headerlink" title="153是一个非常特殊的数，它等于它的每位数字的立方和，即153=111+555+333。编程求所有满足这种条件的三位十进制数。"></a>153是一个非常特殊的数，它等于它的每位数字的立方和，即153=111+555+333。编程求所有满足这种条件的三位十进制数。</h2><pre class=" language-bash"><code class="language-bash">def isSpecialNum<span class="token punctuation">(</span>n<span class="token punctuation">)</span>:
+    <span class="token function">sum</span> <span class="token operator">=</span> 0
+    a<span class="token operator">=</span>n//100
+    b<span class="token operator">=</span>n%100//10
+    c<span class="token operator">=</span>n%10
+    <span class="token function">sum</span> <span class="token operator">=</span> <span class="token function">sum</span> + a*a*a + b*b*b+c*c*c
+    <span class="token keyword">if</span> <span class="token function">sum</span> <span class="token operator">==</span> n:
+        <span class="token keyword">return</span> True
+    else:
+        <span class="token keyword">return</span> False
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>100,1000<span class="token punctuation">)</span>:
+    <span class="token keyword">if</span> isSpecialNum<span class="token punctuation">(</span>i<span class="token punctuation">)</span>:
+        print<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+
+</code></pre>
+<h2 id="123321是一个非常特殊的数，它从左边读和从右边读是一样的。输入一个正整数n，-编程求所有这样的五位和六位十进制数，满足各位数字之和等于n-。"><a href="#123321是一个非常特殊的数，它从左边读和从右边读是一样的。输入一个正整数n，-编程求所有这样的五位和六位十进制数，满足各位数字之和等于n-。" class="headerlink" title="123321是一个非常特殊的数，它从左边读和从右边读是一样的。输入一个正整数n， 编程求所有这样的五位和六位十进制数，满足各位数字之和等于n 。"></a>123321是一个非常特殊的数，它从左边读和从右边读是一样的。输入一个正整数n， 编程求所有这样的五位和六位十进制数，满足各位数字之和等于n 。</h2><pre class=" language-bash"><code class="language-bash">def isHuiWenNum<span class="token punctuation">(</span>n<span class="token punctuation">)</span>:
+    result<span class="token operator">=</span>str<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">[</span>::-1<span class="token punctuation">]</span>
+    <span class="token keyword">if</span> result<span class="token operator">==</span>str<span class="token punctuation">(</span>n<span class="token punctuation">)</span>:
+        <span class="token keyword">return</span> True
+    else:
+        <span class="token keyword">return</span> False
+def isEqual<span class="token punctuation">(</span>n,check<span class="token punctuation">)</span>:
+    sum<span class="token operator">=</span>0
+    b<span class="token operator">=</span>str<span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+    int<span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+    duan<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>b<span class="token punctuation">))</span>:
+        duan.append<span class="token punctuation">(</span>n%10<span class="token punctuation">)</span>
+        n//<span class="token operator">=</span>10
+        sum+<span class="token operator">=</span>duan<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    <span class="token keyword">if</span> <span class="token function">sum</span> <span class="token operator">==</span> check:
+        <span class="token keyword">return</span> True
+    else:
+        <span class="token keyword">return</span> False
+duan <span class="token operator">=</span> eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">))</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>10000,1000000<span class="token punctuation">)</span>:
+    <span class="token keyword">if</span> isHuiWenNum<span class="token punctuation">(</span>i<span class="token punctuation">)</span>:
+        <span class="token keyword">if</span> isEqual<span class="token punctuation">(</span>i,duan<span class="token punctuation">)</span>:
+            print<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    else:
+        <span class="token keyword">continue</span>
+</code></pre>
+<h2 id="给出一个包含n个整数的数列，问整数a在数列中的第一次出现是第几个。"><a href="#给出一个包含n个整数的数列，问整数a在数列中的第一次出现是第几个。" class="headerlink" title="给出一个包含n个整数的数列，问整数a在数列中的第一次出现是第几个。"></a>给出一个包含n个整数的数列，问整数a在数列中的第一次出现是第几个。</h2><pre class=" language-bash"><code class="language-bash">n <span class="token operator">=</span> eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">))</span>
+duan <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+item <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>.split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ch <span class="token operator">=</span> eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">))</span>
+duan <span class="token operator">=</span> <span class="token punctuation">[</span>eval<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> item<span class="token punctuation">]</span>
+index<span class="token operator">=</span>-1
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>duan<span class="token punctuation">))</span>:
+    <span class="token keyword">if</span> ch <span class="token operator">==</span> duan<span class="token punctuation">[</span>i<span class="token punctuation">]</span>:
+        index <span class="token operator">=</span> i
+        <span class="token keyword">break</span>
+<span class="token keyword">if</span> index <span class="token operator">!=</span> -1:
+    print<span class="token punctuation">(</span>index+1<span class="token punctuation">)</span>
+else:
+    print<span class="token punctuation">(</span>-1<span class="token punctuation">)</span>
+</code></pre>
+<h2 id="给出n个数，找出这n个数的最大值，最小值，和。"><a href="#给出n个数，找出这n个数的最大值，最小值，和。" class="headerlink" title="给出n个数，找出这n个数的最大值，最小值，和。"></a>给出n个数，找出这n个数的最大值，最小值，和。</h2><pre class=" language-bash"><code class="language-bash">n <span class="token operator">=</span> eval<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token punctuation">))</span>
+duan <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+item <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>.split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+duan <span class="token operator">=</span> <span class="token punctuation">[</span>eval<span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token keyword">for</span> num <span class="token keyword">in</span> item<span class="token punctuation">]</span>
+print<span class="token punctuation">(</span>max<span class="token punctuation">(</span>duan<span class="token punctuation">))</span>
+print<span class="token punctuation">(</span>min<span class="token punctuation">(</span>duan<span class="token punctuation">))</span>
+print<span class="token punctuation">(</span>sum<span class="token punctuation">(</span>duan<span class="token punctuation">))</span>
+</code></pre>
+<a id="more"></a><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -597,7 +675,7 @@ print<span class="token punctuation">(</span>flag<span class="token punctuation"
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/03/10/first/buuctf-crypto/">http://yoursite.com/2020/03/10/first/buuctf-crypto/</a>
+                    <a href="http://yoursite.com/2020/03/07/python/">http://yoursite.com/2020/03/07/python/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -635,8 +713,8 @@ print<span class="token punctuation">(</span>flag<span class="token punctuation"
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/CTF/">
-                                    <span class="chip bg-color">CTF</span>
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
                                 </a>
                             
                         </div>
@@ -806,25 +884,32 @@ print<span class="token punctuation">(</span>flag<span class="token punctuation"
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/12/first/buuctfmiscwriteup/">
+                <a href="/2020/03/07/python-jia-mi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="BUUCTFMiscWriteup">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Python加密">
                         
-                        <span class="card-title">BUUCTFMiscWriteup</span>
+                        <span class="card-title">Python加密</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            金三胖题目链接：https://buuoj.cn/challenges#%E9%87%91%E4%B8%89%E8%83%96思路：用PhotoShop查看图层，会找到三张上边含有flag信息的.
-二维码题目链接：https://buuoj
+                            md5加密import hashlib
+# 待加密信息
+str = input("密文(字符串)：")
+# 创建md5对象
+m = hashlib.md5()
+
+# Tips
+# 此处必须encode
+# 若写法为m.update(str)
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-12
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-07
                         </span>
                         <span class="publish-author">
                             
@@ -837,8 +922,8 @@ print<span class="token punctuation">(</span>flag<span class="token punctuation"
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/CTF/">
-                        <span class="chip bg-color">CTF</span>
+                    <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6-CTF-Python/">
+                        <span class="chip bg-color">密码学-CTF-Python</span>
                     </a>
                     
                 </div>
@@ -852,31 +937,28 @@ print<span class="token punctuation">(</span>flag<span class="token punctuation"
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/09/first/bossxiang-s-blog/">
+                <a href="/2020/03/05/cipher-md/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="bossXiang's blog">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="cipher.md">
                         
-                        <span class="card-title">bossXiang's blog</span>
+                        <span class="card-title">cipher.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-MD5绕过&lt;?php
-$md51 = md5('240610708');
-$a = @$_GET['a'];
-$md52 = @md5($a);
-if (isset($a))
+                            凯撒密码#include &lt;iostream>
+using namespace std;
+char upper_E3(char str,int shift)
 {
-    if($a != 'QNKCDZO' &am
+        return char((str-65+shift)%2
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-05
                             </span>
                         <span class="publish-author">
                             
@@ -885,6 +967,14 @@ if (isset($a))
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+                        <span class="chip bg-color">密码学</span>
+                    </a>
+                    
                 </div>
                 
             </div>

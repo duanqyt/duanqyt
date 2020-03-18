@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="cipher.md, duan">
+    <meta name="keywords" content="C#, duan">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>cipher.md | duan</title>
+    <title>C# | duan</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -307,12 +307,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">cipher.md</h1>
+                    <h1 class="description center-align post-title">C#</h1>
                 </div>
             </div>
         </div>
@@ -429,14 +429,23 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-                                <span class="chip bg-color">密码学</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C#</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Language/" class="post-category">
+                                Language
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -445,7 +454,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-05
+                    2020-03-08
                 </div>
                 
 
@@ -462,89 +471,186 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="凯撒密码"><a href="#凯撒密码" class="headerlink" title="凯撒密码"></a>凯撒密码</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#include &lt;iostream></span>
-using namespace std<span class="token punctuation">;</span>
-char upper_E3<span class="token punctuation">(</span>char str,int shift<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-        <span class="token keyword">return</span> char<span class="token punctuation">((</span>str-65+shift<span class="token punctuation">)</span>%26+65<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-char lower_E3<span class="token punctuation">(</span>char str,int shift<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-        <span class="token keyword">return</span> char<span class="token punctuation">((</span>str-97+shift<span class="token punctuation">)</span>%26+97<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-int main<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    string str <span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">;</span>//明文
-    string str1<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">;</span>//密文
-    int <span class="token function">shift</span> <span class="token operator">=</span> 3<span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入明文："</span><span class="token punctuation">;</span>
-    getline<span class="token punctuation">(</span>cin,str<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入移位量："</span><span class="token punctuation">;</span>
-    cin <span class="token operator">>></span> <span class="token function">shift</span><span class="token punctuation">;</span>
-    for<span class="token punctuation">(</span>int i <span class="token operator">=</span>0<span class="token punctuation">;</span>i<span class="token operator">&lt;</span>str.length<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i++<span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        if<span class="token punctuation">(</span>isalpha<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">))</span>
-        <span class="token punctuation">{</span>
-            if<span class="token punctuation">(</span>islower<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">))</span>
-                str1 +<span class="token operator">=</span> lower_E3<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span>,shift<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            if<span class="token punctuation">(</span>isupper<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">))</span>
-                str1 +<span class="token operator">=</span> upper_E3<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span>,shift<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">else</span>
-        <span class="token punctuation">{</span>
-            str1 +<span class="token operator">=</span> str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"密文："</span> <span class="token operator">&lt;&lt;</span>str1 <span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p>###<br>明文：PLEASESENDMETHEBOOKMYCREDITCARDNOISSIXONETWOONETHREEEIGHTSIXZEROONESIXEIGHTFOURNINESEVENZEROTWO<br><img src="http://q6py5t1v8.bkt.clouddn.com/%E5%AF%86%E7%A0%81%E5%AD%A6.png" alt="alt"></p>
+                <h2 id="C-实现"><a href="#C-实现" class="headerlink" title="C#实现"></a>C#实现</h2><h5 id="A-DNS域名解析和IP地址转换的基本用法"><a href="#A-DNS域名解析和IP地址转换的基本用法" class="headerlink" title="A:DNS域名解析和IP地址转换的基本用法"></a>A:DNS域名解析和IP地址转换的基本用法</h5><h5 id="B-获取网络适配器信息"><a href="#B-获取网络适配器信息" class="headerlink" title="B:获取网络适配器信息"></a>B:获取网络适配器信息</h5><h5 id="C-网络流量统计"><a href="#C-网络流量统计" class="headerlink" title="C:网络流量统计"></a>C:网络流量统计</h5><h5 id="D-退出程序"><a href="#D-退出程序" class="headerlink" title="D:退出程序"></a>D:退出程序</h5><a id="more"></a>
 <pre class=" language-bash"><code class="language-bash">using System<span class="token punctuation">;</span>
-using System.Collections.Generic<span class="token punctuation">;</span>
-using System.Linq<span class="token punctuation">;</span>
 using System.Text<span class="token punctuation">;</span>
-using System.Threading.Tasks<span class="token punctuation">;</span>
-
-namespace 第三题
+using System.Net<span class="token punctuation">;</span>
+using System.Net.NetworkInformation<span class="token punctuation">;</span>
+using System.Net.Sockets<span class="token punctuation">;</span>
+using System.Diagnostics<span class="token punctuation">;</span>
+using System.Timers<span class="token punctuation">;</span>
+namespace Chapter_1
 <span class="token punctuation">{</span>
     class Program
     <span class="token punctuation">{</span>
         static void Main<span class="token punctuation">(</span>string<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
         <span class="token punctuation">{</span>
-            int<span class="token punctuation">[</span>,<span class="token punctuation">]</span> A <span class="token operator">=</span> new int<span class="token punctuation">[</span>4, 4<span class="token punctuation">]</span> 
-            <span class="token punctuation">{</span> 
-              <span class="token punctuation">{</span> 3, 13, 21, 9 <span class="token punctuation">}</span>, 
-              <span class="token punctuation">{</span> 15, 10, 6, 25 <span class="token punctuation">}</span>, 
-              <span class="token punctuation">{</span> 10, 17, 4, 8 <span class="token punctuation">}</span>,
-              <span class="token punctuation">{</span> 1, 23, 7, 2 <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span><span class="token punctuation">;</span>
-            int<span class="token punctuation">[</span><span class="token punctuation">]</span> B <span class="token operator">=</span> new int<span class="token punctuation">[</span>4<span class="token punctuation">]</span> <span class="token punctuation">{</span> 1,21,8,17<span class="token punctuation">}</span><span class="token punctuation">;</span>
-            string cipher <span class="token operator">=</span> <span class="token string">"PLEASESENDMETHEBOOKMYCREDITCARDNOISSIXONETWOONETHREEEIGHTSIXZEROONESIXEIGHTFOURNINESEVENZEROTWO"</span><span class="token punctuation">;</span>
-            int<span class="token punctuation">[</span><span class="token punctuation">]</span> M <span class="token operator">=</span> new int<span class="token punctuation">[</span>cipher.Length+1<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            int<span class="token punctuation">[</span>,<span class="token punctuation">]</span> result <span class="token operator">=</span> new int<span class="token punctuation">[</span>4,cipher.Length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-
-            //
-            int i <span class="token operator">=</span> 0<span class="token punctuation">;</span>
-            foreach <span class="token punctuation">(</span>var item <span class="token keyword">in</span> cipher<span class="token punctuation">)</span>
-            <span class="token punctuation">{</span>
-                M<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> item - <span class="token string">'A'</span><span class="token punctuation">;</span>
-                i++<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> cipher.Length<span class="token punctuation">;</span> i++<span class="token punctuation">)</span>
-            <span class="token punctuation">{</span>
-                <span class="token keyword">for</span> <span class="token punctuation">(</span>int j <span class="token operator">=</span> 0<span class="token punctuation">;</span> j <span class="token operator">&lt;</span> 4<span class="token punctuation">;</span> j++<span class="token punctuation">)</span>
-                <span class="token punctuation">{</span>
-                    result<span class="token punctuation">[</span>i % 4, i / 4<span class="token punctuation">]</span> +<span class="token operator">=</span> M<span class="token punctuation">[</span><span class="token punctuation">(</span>i / 4<span class="token punctuation">)</span> * 4 + j<span class="token punctuation">]</span> * A<span class="token punctuation">[</span>i % 4, j<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                result<span class="token punctuation">[</span>i % 4, i / 4<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>result<span class="token punctuation">[</span>i % 4, i / 4<span class="token punctuation">]</span>+ B<span class="token punctuation">[</span>i%4<span class="token punctuation">]</span><span class="token punctuation">)</span>%26<span class="token punctuation">;</span>
-                Console.Write<span class="token punctuation">((</span>char<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'A'</span>+ result<span class="token punctuation">[</span>i % 4, i / 4<span class="token punctuation">]</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
+            //Timer timer <span class="token operator">=</span> new Timer<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            //timer.Enabled <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+            //timer.Interval <span class="token operator">=</span> 2000<span class="token punctuation">;</span>
+            //timer.Start<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            //timer.Elapsed +<span class="token operator">=</span> new ElapsedEventHandler<span class="token punctuation">(</span>exit<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 
 
+            dph_NetInfo<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-            Console.ReadLine<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
+
+        private static void dph_NetInfo<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            Console.WriteLine<span class="token punctuation">(</span><span class="token string">"A:DNS域名解析和IP地址转换的基本用法"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console.WriteLine<span class="token punctuation">(</span><span class="token string">"B:获取网络适配器信息"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console.WriteLine<span class="token punctuation">(</span><span class="token string">"C:网络流量统计"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console.WriteLine<span class="token punctuation">(</span><span class="token string">"D:退出程序"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console.Write<span class="token punctuation">(</span><span class="token string">"请输入："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            string ch <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+            ch <span class="token operator">=</span> Console.ReadLine<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            switch <span class="token punctuation">(</span>ch<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">case</span> <span class="token string">"A"</span><span class="token keyword">:</span>
+                    dnsAnalysis<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    dph_NetInfo<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token string">"B"</span><span class="token keyword">:</span>
+                    networkTrafficStatistics<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    dph_NetInfo<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token string">"C"</span><span class="token keyword">:</span>
+                    networkAdapterInfo<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    dph_NetInfo<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                default:
+                    <span class="token keyword">return</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        //DNS域名解析和IP地址转换的基本用法
+        public static void dnsAnalysis<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            StringBuilder sb <span class="token operator">=</span> new StringBuilder<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            string str <span class="token operator">=</span> <span class="token string">"www.baidu.com"</span><span class="token punctuation">;</span>
+            sb.AppendLine<span class="token punctuation">(</span><span class="token string">"获取"</span> + str + <span class="token string">"的所有IP地址："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            IPAddress<span class="token punctuation">[</span><span class="token punctuation">]</span> ips <span class="token operator">=</span> Dns.GetHostAddresses<span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            foreach <span class="token punctuation">(</span>var ip <span class="token keyword">in</span> ips<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                sb.AppendLine<span class="token punctuation">(</span>ip.ToString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            string hostName <span class="token operator">=</span> Dns.GetHostName<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sb.AppendLine<span class="token punctuation">(</span><span class="token string">"获取本机所有IP地址："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            try
+            <span class="token punctuation">{</span>
+                //本机
+                IPHostEntry me <span class="token operator">=</span> Dns.GetHostEntry<span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                foreach <span class="token punctuation">(</span>IPAddress ip <span class="token keyword">in</span> me.AddressList<span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    if<span class="token punctuation">(</span>ip.AddressFamily <span class="token operator">==</span> AddressFamily.InterNetwork<span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        sb.AppendLine<span class="token punctuation">(</span><span class="token string">"IPV4: "</span> + ip.ToString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">else</span> if<span class="token punctuation">(</span>ip.AddressFamily <span class="token operator">==</span> AddressFamily.InterNetworkV6<span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        sb.AppendLine<span class="token punctuation">(</span><span class="token string">"IPV6: "</span> + ip.ToString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">else</span>
+                    <span class="token punctuation">{</span>
+                        sb.AppendLine<span class="token punctuation">(</span><span class="token string">"其他："</span> + ip.ToString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+
+
+                //IPv4
+                IPAddress localIPv4 <span class="token operator">=</span> IPAddress.Parse<span class="token punctuation">(</span><span class="token string">"127.0.0.1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                Output<span class="token punctuation">(</span>sb, localIPv4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                //IPv6
+                IPAddress localIPv6 <span class="token operator">=</span> IPAddress.Parse<span class="token punctuation">(</span><span class="token string">"::1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                Output<span class="token punctuation">(</span>sb, localIPv6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            catch <span class="token punctuation">(</span>Exception ex<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                Console.WriteLine<span class="token punctuation">(</span><span class="token string">"Error"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            Console.WriteLine<span class="token punctuation">(</span>sb.ToString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        /// <span class="token operator">&lt;</span>summary<span class="token operator">></span>
+        /// Output
+        /// <span class="token operator">&lt;</span>/summary<span class="token operator">></span>
+        /// <span class="token operator">&lt;</span>param name<span class="token operator">=</span><span class="token string">"sb"</span><span class="token operator">></span><span class="token operator">&lt;</span>/param<span class="token operator">></span>
+        /// <span class="token operator">&lt;</span>param name<span class="token operator">=</span><span class="token string">"localip"</span><span class="token operator">></span><span class="token operator">&lt;</span>/param<span class="token operator">></span>
+        private static void Output<span class="token punctuation">(</span>StringBuilder sb, IPAddress localip<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            IPEndPoint iep <span class="token operator">=</span> new IPEndPoint<span class="token punctuation">(</span>localip, 80<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>localip.AddressFamily <span class="token operator">==</span> AddressFamily.InterNetworkV6<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                sb.Append<span class="token punctuation">(</span><span class="token string">"IPv6端点： "</span> + iep.ToString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span>
+            <span class="token punctuation">{</span>
+                sb.Append<span class="token punctuation">(</span><span class="token string">"IPv4端点： "</span> + iep.ToString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            sb.Append<span class="token punctuation">(</span><span class="token string">"，端口 "</span> + iep.Port<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sb.Append<span class="token punctuation">(</span><span class="token string">"，地址 "</span> + iep.Address<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sb.AppendLine<span class="token punctuation">(</span><span class="token string">"，地址族 "</span> + iep.AddressFamily<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+        //获取网络适配器信息
+        public static void networkAdapterInfo<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            StringBuilder sb <span class="token operator">=</span> new StringBuilder<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            IPGlobalProperties properties <span class="token operator">=</span> IPGlobalProperties.GetIPGlobalProperties<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            IPGlobalStatistics ipstat <span class="token operator">=</span> properties.GetIPv4GlobalStatistics<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sb.AppendLine<span class="token punctuation">(</span><span class="token string">"本机注册域名： "</span> + properties.DomainName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sb.AppendLine<span class="token punctuation">(</span><span class="token string">"接收数据报数： "</span> + ipstat.ReceivedPackets<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sb.AppendLine<span class="token punctuation">(</span><span class="token string">"转发数据包数 : "</span> + ipstat.ReceivedPacketsForwarded<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sb.AppendLine<span class="token punctuation">(</span><span class="token string">"传送数据包数 : "</span> + ipstat.ReceivedPacketsDelivered<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sb.AppendLine<span class="token punctuation">(</span><span class="token string">"丢弃数据包数 : "</span> + ipstat.ReceivedPacketsDiscarded<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console.WriteLine<span class="token punctuation">(</span>sb.ToString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+        //网络流量统计
+        public static void networkTrafficStatistics<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            StringBuilder sb <span class="token operator">=</span> new StringBuilder<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            NetworkInterface<span class="token punctuation">[</span><span class="token punctuation">]</span> adapters <span class="token operator">=</span> NetworkInterface.GetAllNetworkInterfaces<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            sb.AppendLine<span class="token punctuation">(</span><span class="token string">"适配器个数： "</span> + adapters.Length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            int index <span class="token operator">=</span> 0<span class="token punctuation">;</span>//用于之后显示是第几个网络适配器
+            foreach  <span class="token punctuation">(</span>NetworkInterface adapter <span class="token keyword">in</span> adapters<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                index++<span class="token punctuation">;</span>
+                sb.AppendLine<span class="token punctuation">(</span><span class="token string">"\n\n------------第"</span> + index + <span class="token string">"个适配器信息------------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                //显示网络适配器描述信息、名称、类型、速度、MAC地址
+                sb.AppendLine<span class="token punctuation">(</span><span class="token string">"描述信息： "</span> + adapter.Description<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                sb.AppendLine<span class="token punctuation">(</span><span class="token string">"名称："</span> + adapter.Name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                sb.AppendLine<span class="token punctuation">(</span><span class="token string">"类型："</span> + adapter.NetworkInterfaceType<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                sb.AppendLine<span class="token punctuation">(</span><span class="token string">"速度："</span> + adapter.Speed/1024/1024 + <span class="token string">" MB/s"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                byte<span class="token punctuation">[</span><span class="token punctuation">]</span> macBytes <span class="token operator">=</span> adapter.GetPhysicalAddress<span class="token punctuation">(</span><span class="token punctuation">)</span>.GetAddressBytes<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                sb.AppendLine<span class="token punctuation">(</span><span class="token string">"MAC地址："</span> + BitConverter.ToString<span class="token punctuation">(</span>macBytes<span class="token punctuation">))</span><span class="token punctuation">;</span>
+
+                //获取IPInterfaceProperties实例
+                IPInterfaceProperties adapterProperties <span class="token operator">=</span> adapter.GetIPProperties<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                //获取并显示DNS服务器地址信息
+                IPAddressCollection dnsServers <span class="token operator">=</span> adapterProperties.DnsAddresses<span class="token punctuation">;</span>
+                if<span class="token punctuation">(</span>dnsServers.Count <span class="token operator">></span> 0<span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    foreach <span class="token punctuation">(</span>var dns <span class="token keyword">in</span> dnsServers<span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        sb.AppendLine<span class="token punctuation">(</span><span class="token string">"DNS服务器IP地址："</span> + dns<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            Console.WriteLine<span class="token punctuation">(</span>sb.ToString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        //public static void exit<span class="token punctuation">(</span>object source,ElapsedEventHandler e<span class="token punctuation">)</span>
+        //<span class="token punctuation">{</span>
+        //    <span class="token keyword">return</span><span class="token punctuation">;</span>
+        //<span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
@@ -591,7 +697,7 @@ namespace 第三题
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/03/05/first/cipher-md/">http://yoursite.com/2020/03/05/first/cipher-md/</a>
+                    <a href="http://yoursite.com/2020/03/08/c/">http://yoursite.com/2020/03/08/c/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -629,8 +735,8 @@ namespace 第三题
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-                                    <span class="chip bg-color">密码学</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C#</span>
                                 </a>
                             
                         </div>
@@ -800,29 +906,29 @@ namespace 第三题
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/07/first/python/">
+                <a href="/2020/03/08/c-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Python">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="C++">
                         
-                        <span class="card-title">Python</span>
+                        <span class="card-title">C++</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            核桃的数量a,b,c=map(int,input().split())
-def duan(a,b,c):
-    n=1
-    while True:
-        if n%a==0 and n%b==0 and n%c==0:
-  
+                            线性表数据结构线性表常见操作/*
+======线性表常见操作==========
+======作者：Duanqiao==========
+======version:1.1.1===========
+======描述：数据结构实验作业==
+
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-07
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-08
                         </span>
                         <span class="publish-author">
                             
@@ -839,8 +945,8 @@ def duan(a,b,c):
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
                 </div>
@@ -851,31 +957,35 @@ def duan(a,b,c):
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/05/first/cipher-md/">
+                <a href="/2020/03/07/python-jia-mi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="cipher.md">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Python加密">
                         
-                        <span class="card-title">cipher.md</span>
+                        <span class="card-title">Python加密</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            凯撒密码#include &lt;iostream>
-using namespace std;
-char upper_E3(char str,int shift)
-{
-        return char((str-65+shift)%2
+                            md5加密import hashlib
+# 待加密信息
+str = input("密文(字符串)：")
+# 创建md5对象
+m = hashlib.md5()
+
+# Tips
+# 此处必须encode
+# 若写法为m.update(str)
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-07
                             </span>
                         <span class="publish-author">
                             
@@ -885,12 +995,11 @@ char upper_E3(char str,int shift)
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-                        <span class="chip bg-color">密码学</span>
+                    <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6-CTF-Python/">
+                        <span class="chip bg-color">密码学-CTF-Python</span>
                     </a>
                     
                 </div>
