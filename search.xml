@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Java对象和类</title>
+      <link href="/2020/03/19/java-dui-xiang-he-lei/"/>
+      <url>/2020/03/19/java-dui-xiang-he-lei/</url>
+      
+        <content type="html"><![CDATA[<h3 id="为对象定义类"><a href="#为对象定义类" class="headerlink" title="为对象定义类"></a>为对象定义类</h3><ul><li>类为对象定义属性和行为</li><li>一个对象的状态由具有当前值的数据域来表示</li><li>对象的行为由方法完成</li><li>一个对象是类的一个实例<a id="more"></a><h3 id="asfasfs"><a href="#asfasfs" class="headerlink" title="asfasfs"></a>asfasfs</h3></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Language </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java对象和类 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>README</title>
       <link href="/2020/03/18/readme/"/>
       <url>/2020/03/18/readme/</url>
