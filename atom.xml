@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-19T07:58:22.350Z</updated>
+  <updated>2020-03-20T03:35:10.896Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,17 @@
     <link href="http://yoursite.com/2020/03/19/java-dui-xiang-he-lei/"/>
     <id>http://yoursite.com/2020/03/19/java-dui-xiang-he-lei/</id>
     <published>2020-03-19T07:28:02.000Z</published>
-    <updated>2020-03-19T07:58:22.350Z</updated>
+    <updated>2020-03-20T03:35:10.896Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;为对象定义类&quot;&gt;&lt;a href=&quot;#为对象定义类&quot; class=&quot;headerlink&quot; title=&quot;为对象定义类&quot;&gt;&lt;/a&gt;为对象定义类&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;类为对象定义属性和行为&lt;/li&gt;
-&lt;li&gt;一个对象的状态由具有当前值的数据域来表示&lt;/li&gt;
-&lt;li&gt;对象的行为由方法完成&lt;/li&gt;
-&lt;li&gt;一个对象是类的一个实例&lt;/li&gt;&lt;/ul&gt;
+      
+      
+        
+        
+          &lt;h3 id=&quot;为对象定义类&quot;&gt;&lt;a href=&quot;#为对象定义类&quot; class=&quot;headerlink&quot;
+        
+      
     
     </summary>
     
