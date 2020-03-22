@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://duanqyt.xyz/"/>
   <updated>2020-03-20T11:28:02.114Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://duanqyt.xyz/</id>
   
   <author>
     <name>duanqiao</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Java对象和类</title>
-    <link href="http://yoursite.com/2020/03/19/java-dui-xiang-he-lei/"/>
-    <id>http://yoursite.com/2020/03/19/java-dui-xiang-he-lei/</id>
+    <link href="https://duanqyt.xyz/2020/03/19/java-dui-xiang-he-lei/"/>
+    <id>https://duanqyt.xyz/2020/03/19/java-dui-xiang-he-lei/</id>
     <published>2020-03-19T07:28:02.000Z</published>
     <updated>2020-03-20T11:28:02.114Z</updated>
     
@@ -36,17 +36,17 @@
     </summary>
     
     
-      <category term="Language" scheme="http://yoursite.com/categories/Language/"/>
+      <category term="Language" scheme="https://duanqyt.xyz/categories/Language/"/>
     
     
-      <category term="Java对象和类" scheme="http://yoursite.com/tags/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/"/>
+      <category term="Java对象和类" scheme="https://duanqyt.xyz/tags/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/"/>
     
   </entry>
   
   <entry>
     <title>README</title>
-    <link href="http://yoursite.com/2020/03/18/readme/"/>
-    <id>http://yoursite.com/2020/03/18/readme/</id>
+    <link href="https://duanqyt.xyz/2020/03/18/readme/"/>
+    <id>https://duanqyt.xyz/2020/03/18/readme/</id>
     <published>2020-03-18T01:08:07.365Z</published>
     <updated>2020-03-08T05:55:56.155Z</updated>
     
@@ -72,8 +72,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2020/03/18/hello-world/"/>
-    <id>http://yoursite.com/2020/03/18/hello-world/</id>
+    <link href="https://duanqyt.xyz/2020/03/18/hello-world/"/>
+    <id>https://duanqyt.xyz/2020/03/18/hello-world/</id>
     <published>2020-03-18T00:31:14.767Z</published>
     <updated>2020-03-18T00:31:14.767Z</updated>
     
@@ -95,8 +95,8 @@
   
   <entry>
     <title>Kali虚拟机下的arp欺骗</title>
-    <link href="http://yoursite.com/2020/03/12/shen-tou-ce-shi/"/>
-    <id>http://yoursite.com/2020/03/12/shen-tou-ce-shi/</id>
+    <link href="https://duanqyt.xyz/2020/03/12/shen-tou-ce-shi/"/>
+    <id>https://duanqyt.xyz/2020/03/12/shen-tou-ce-shi/</id>
     <published>2020-03-12T01:43:35.000Z</published>
     <updated>2020-03-12T01:44:35.395Z</updated>
     
@@ -114,14 +114,14 @@
     
     
     
-      <category term="Kali-渗透测试" scheme="http://yoursite.com/tags/Kali-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+      <category term="Kali-渗透测试" scheme="https://duanqyt.xyz/tags/Kali-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>BUUCTFMiscWriteup</title>
-    <link href="http://yoursite.com/2020/03/12/buuctfmiscwriteup/"/>
-    <id>http://yoursite.com/2020/03/12/buuctfmiscwriteup/</id>
+    <link href="https://duanqyt.xyz/2020/03/12/buuctfmiscwriteup/"/>
+    <id>https://duanqyt.xyz/2020/03/12/buuctfmiscwriteup/</id>
     <published>2020-03-12T01:40:49.000Z</published>
     <updated>2020-03-12T01:41:19.102Z</updated>
     
@@ -139,14 +139,14 @@
     
     
     
-      <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
+      <category term="CTF" scheme="https://duanqyt.xyz/tags/CTF/"/>
     
   </entry>
   
   <entry>
     <title>BUUCTF-Crypto</title>
-    <link href="http://yoursite.com/2020/03/10/buuctf-crypto/"/>
-    <id>http://yoursite.com/2020/03/10/buuctf-crypto/</id>
+    <link href="https://duanqyt.xyz/2020/03/10/buuctf-crypto/"/>
+    <id>https://duanqyt.xyz/2020/03/10/buuctf-crypto/</id>
     <published>2020-03-10T06:24:12.000Z</published>
     <updated>2020-03-10T07:28:36.528Z</updated>
     
@@ -162,14 +162,14 @@
     
     
     
-      <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
+      <category term="CTF" scheme="https://duanqyt.xyz/tags/CTF/"/>
     
   </entry>
   
   <entry>
     <title>bossXiang&#39;s blog</title>
-    <link href="http://yoursite.com/2020/03/09/bossxiang-s-blog/"/>
-    <id>http://yoursite.com/2020/03/09/bossxiang-s-blog/</id>
+    <link href="https://duanqyt.xyz/2020/03/09/bossxiang-s-blog/"/>
+    <id>https://duanqyt.xyz/2020/03/09/bossxiang-s-blog/</id>
     <published>2020-03-09T08:10:30.000Z</published>
     <updated>2020-03-09T08:18:32.706Z</updated>
     
@@ -192,8 +192,8 @@
   
   <entry>
     <title>C#简易任务管理器</title>
-    <link href="http://yoursite.com/2020/03/09/c-jian-yi-ren-wu-guan-li-qi/"/>
-    <id>http://yoursite.com/2020/03/09/c-jian-yi-ren-wu-guan-li-qi/</id>
+    <link href="https://duanqyt.xyz/2020/03/09/c-jian-yi-ren-wu-guan-li-qi/"/>
+    <id>https://duanqyt.xyz/2020/03/09/c-jian-yi-ren-wu-guan-li-qi/</id>
     <published>2020-03-09T06:59:27.000Z</published>
     <updated>2020-03-09T07:34:48.253Z</updated>
     
@@ -208,14 +208,14 @@
     
     
     
-      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+      <category term="C#" scheme="https://duanqyt.xyz/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>C++</title>
-    <link href="http://yoursite.com/2020/03/08/c-1/"/>
-    <id>http://yoursite.com/2020/03/08/c-1/</id>
+    <link href="https://duanqyt.xyz/2020/03/08/c-1/"/>
+    <id>https://duanqyt.xyz/2020/03/08/c-1/</id>
     <published>2020-03-08T06:54:50.000Z</published>
     <updated>2020-03-12T01:48:08.645Z</updated>
     
@@ -232,17 +232,17 @@
     </summary>
     
     
-      <category term="Language" scheme="http://yoursite.com/categories/Language/"/>
+      <category term="Language" scheme="https://duanqyt.xyz/categories/Language/"/>
     
     
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+      <category term="C++" scheme="https://duanqyt.xyz/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>C#</title>
-    <link href="http://yoursite.com/2020/03/08/c/"/>
-    <id>http://yoursite.com/2020/03/08/c/</id>
+    <link href="https://duanqyt.xyz/2020/03/08/c/"/>
+    <id>https://duanqyt.xyz/2020/03/08/c/</id>
     <published>2020-03-08T05:40:47.000Z</published>
     <updated>2020-03-09T08:08:47.610Z</updated>
     
@@ -253,17 +253,17 @@
     </summary>
     
     
-      <category term="Language" scheme="http://yoursite.com/categories/Language/"/>
+      <category term="Language" scheme="https://duanqyt.xyz/categories/Language/"/>
     
     
-      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+      <category term="C#" scheme="https://duanqyt.xyz/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>Python加密</title>
-    <link href="http://yoursite.com/2020/03/07/python-jia-mi/"/>
-    <id>http://yoursite.com/2020/03/07/python-jia-mi/</id>
+    <link href="https://duanqyt.xyz/2020/03/07/python-jia-mi/"/>
+    <id>https://duanqyt.xyz/2020/03/07/python-jia-mi/</id>
     <published>2020-03-07T11:08:02.000Z</published>
     <updated>2020-03-08T05:59:16.603Z</updated>
     
@@ -281,14 +281,14 @@
     
     
     
-      <category term="密码学-CTF-Python" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6-CTF-Python/"/>
+      <category term="密码学-CTF-Python" scheme="https://duanqyt.xyz/tags/%E5%AF%86%E7%A0%81%E5%AD%A6-CTF-Python/"/>
     
   </entry>
   
   <entry>
     <title>Python</title>
-    <link href="http://yoursite.com/2020/03/07/python/"/>
-    <id>http://yoursite.com/2020/03/07/python/</id>
+    <link href="https://duanqyt.xyz/2020/03/07/python/"/>
+    <id>https://duanqyt.xyz/2020/03/07/python/</id>
     <published>2020-03-07T09:57:40.000Z</published>
     <updated>2020-03-09T08:08:58.691Z</updated>
     
@@ -459,17 +459,17 @@ print(sum(duan))
     </summary>
     
     
-      <category term="Language" scheme="http://yoursite.com/categories/Language/"/>
+      <category term="Language" scheme="https://duanqyt.xyz/categories/Language/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://duanqyt.xyz/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>cipher.md</title>
-    <link href="http://yoursite.com/2020/03/05/cipher-md/"/>
-    <id>http://yoursite.com/2020/03/05/cipher-md/</id>
+    <link href="https://duanqyt.xyz/2020/03/05/cipher-md/"/>
+    <id>https://duanqyt.xyz/2020/03/05/cipher-md/</id>
     <published>2020-03-05T11:29:25.000Z</published>
     <updated>2020-03-06T03:59:19.083Z</updated>
     
@@ -487,7 +487,7 @@ print(sum(duan))
     
     
     
-      <category term="密码学" scheme="http://yoursite.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+      <category term="密码学" scheme="https://duanqyt.xyz/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
   </entry>
   
