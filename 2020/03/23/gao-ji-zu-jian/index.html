@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="cipher.md, duan">
+    <meta name="keywords" content="高级组件, duan">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>cipher.md | duan</title>
+    <title>高级组件 | duan</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -307,12 +307,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">cipher.md</h1>
+                    <h1 class="description center-align post-title">高级组件</h1>
                 </div>
             </div>
         </div>
@@ -429,14 +429,23 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-                                <span class="chip bg-color">密码学</span>
+                            <a href="/tags/Android%E5%BC%80%E5%8F%91/">
+                                <span class="chip bg-color">Android开发</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Android%E5%BC%80%E5%8F%91/" class="post-category">
+                                Android开发
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -445,21 +454,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-05
+                    2020-03-23
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-06
+                    2020-03-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    315
+                    171
                 </div>
                 
 
@@ -482,92 +491,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="凯撒密码"><a href="#凯撒密码" class="headerlink" title="凯撒密码"></a>凯撒密码</h3><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true">#include &lt;iostream></span>
-using namespace std<span class="token punctuation">;</span>
-char upper_E3<span class="token punctuation">(</span>char str,int shift<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-        <span class="token keyword">return</span> char<span class="token punctuation">((</span>str-65+shift<span class="token punctuation">)</span>%26+65<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-char lower_E3<span class="token punctuation">(</span>char str,int shift<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-        <span class="token keyword">return</span> char<span class="token punctuation">((</span>str-97+shift<span class="token punctuation">)</span>%26+97<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-int main<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    string str <span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">;</span>//明文
-    string str1<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">;</span>//密文
-    int <span class="token function">shift</span> <span class="token operator">=</span> 3<span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入明文："</span><span class="token punctuation">;</span>
-    getline<span class="token punctuation">(</span>cin,str<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入移位量："</span><span class="token punctuation">;</span>
-    cin <span class="token operator">>></span> <span class="token function">shift</span><span class="token punctuation">;</span>
-    for<span class="token punctuation">(</span>int i <span class="token operator">=</span>0<span class="token punctuation">;</span>i<span class="token operator">&lt;</span>str.length<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i++<span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        if<span class="token punctuation">(</span>isalpha<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">))</span>
-        <span class="token punctuation">{</span>
-            if<span class="token punctuation">(</span>islower<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">))</span>
-                str1 +<span class="token operator">=</span> lower_E3<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span>,shift<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            if<span class="token punctuation">(</span>isupper<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">))</span>
-                str1 +<span class="token operator">=</span> upper_E3<span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span>,shift<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">else</span>
-        <span class="token punctuation">{</span>
-            str1 +<span class="token operator">=</span> str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"密文："</span> <span class="token operator">&lt;&lt;</span>str1 <span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<p>###<br>明文：PLEASESENDMETHEBOOKMYCREDITCARDNOISSIXONETWOONETHREEEIGHTSIXZEROONESIXEIGHTFOURNINESEVENZEROTWO<br><img src="http://q6py5t1v8.bkt.clouddn.com/%E5%AF%86%E7%A0%81%E5%AD%A6.png" alt="alt"></p>
-<pre class=" language-bash"><code class="language-bash">using System<span class="token punctuation">;</span>
-using System.Collections.Generic<span class="token punctuation">;</span>
-using System.Linq<span class="token punctuation">;</span>
-using System.Text<span class="token punctuation">;</span>
-using System.Threading.Tasks<span class="token punctuation">;</span>
-
-namespace 第三题
-<span class="token punctuation">{</span>
-    class Program
-    <span class="token punctuation">{</span>
-        static void Main<span class="token punctuation">(</span>string<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            int<span class="token punctuation">[</span>,<span class="token punctuation">]</span> A <span class="token operator">=</span> new int<span class="token punctuation">[</span>4, 4<span class="token punctuation">]</span> 
-            <span class="token punctuation">{</span> 
-              <span class="token punctuation">{</span> 3, 13, 21, 9 <span class="token punctuation">}</span>, 
-              <span class="token punctuation">{</span> 15, 10, 6, 25 <span class="token punctuation">}</span>, 
-              <span class="token punctuation">{</span> 10, 17, 4, 8 <span class="token punctuation">}</span>,
-              <span class="token punctuation">{</span> 1, 23, 7, 2 <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span><span class="token punctuation">;</span>
-            int<span class="token punctuation">[</span><span class="token punctuation">]</span> B <span class="token operator">=</span> new int<span class="token punctuation">[</span>4<span class="token punctuation">]</span> <span class="token punctuation">{</span> 1,21,8,17<span class="token punctuation">}</span><span class="token punctuation">;</span>
-            string cipher <span class="token operator">=</span> <span class="token string">"PLEASESENDMETHEBOOKMYCREDITCARDNOISSIXONETWOONETHREEEIGHTSIXZEROONESIXEIGHTFOURNINESEVENZEROTWO"</span><span class="token punctuation">;</span>
-            int<span class="token punctuation">[</span><span class="token punctuation">]</span> M <span class="token operator">=</span> new int<span class="token punctuation">[</span>cipher.Length+1<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            int<span class="token punctuation">[</span>,<span class="token punctuation">]</span> result <span class="token operator">=</span> new int<span class="token punctuation">[</span>4,cipher.Length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-
-            //
-            int i <span class="token operator">=</span> 0<span class="token punctuation">;</span>
-            foreach <span class="token punctuation">(</span>var item <span class="token keyword">in</span> cipher<span class="token punctuation">)</span>
-            <span class="token punctuation">{</span>
-                M<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> item - <span class="token string">'A'</span><span class="token punctuation">;</span>
-                i++<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> cipher.Length<span class="token punctuation">;</span> i++<span class="token punctuation">)</span>
-            <span class="token punctuation">{</span>
-                <span class="token keyword">for</span> <span class="token punctuation">(</span>int j <span class="token operator">=</span> 0<span class="token punctuation">;</span> j <span class="token operator">&lt;</span> 4<span class="token punctuation">;</span> j++<span class="token punctuation">)</span>
-                <span class="token punctuation">{</span>
-                    result<span class="token punctuation">[</span>i % 4, i / 4<span class="token punctuation">]</span> +<span class="token operator">=</span> M<span class="token punctuation">[</span><span class="token punctuation">(</span>i / 4<span class="token punctuation">)</span> * 4 + j<span class="token punctuation">]</span> * A<span class="token punctuation">[</span>i % 4, j<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                result<span class="token punctuation">[</span>i % 4, i / 4<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>result<span class="token punctuation">[</span>i % 4, i / 4<span class="token punctuation">]</span>+ B<span class="token punctuation">[</span>i%4<span class="token punctuation">]</span><span class="token punctuation">)</span>%26<span class="token punctuation">;</span>
-                Console.Write<span class="token punctuation">((</span>char<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'A'</span>+ result<span class="token punctuation">[</span>i % 4, i / 4<span class="token punctuation">]</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-
-
-
-
-            Console.ReadLine<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
+                <h3 id="ListView"><a href="#ListView" class="headerlink" title="ListView"></a>ListView</h3><blockquote>
+<p>允许用户通过手指上下滑动将屏幕外的数据滚动到屏幕内，同时原有数据滚动出屏幕。<br>    - 用于垂直显示，如果显示内容过多，则会自动出现垂直滚动条<br>    - 能通过适配器将数据和显示空间绑定，在有限的屏幕上提供大量内容供用户选择<br>    - 支持单击事件，可以用少量的代码实现复杂的选择功能</p>
+</blockquote>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -611,7 +537,7 @@ namespace 第三题
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://duanqyt.xyz/2020/03/05/cipher-md/">https://duanqyt.xyz/2020/03/05/cipher-md/</a>
+                    <a href="https://duanqyt.xyz/2020/03/23/gao-ji-zu-jian/">https://duanqyt.xyz/2020/03/23/gao-ji-zu-jian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -649,8 +575,8 @@ namespace 第三题
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-                                    <span class="chip bg-color">密码学</span>
+                                <a href="/tags/Android%E5%BC%80%E5%8F%91/">
+                                    <span class="chip bg-color">Android开发</span>
                                 </a>
                             
                         </div>
@@ -841,34 +767,94 @@ namespace 第三题
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/07/python/">
+                <a href="/2020/03/23/gao-ji-zu-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Python">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="高级组件">
                         
-                        <span class="card-title">Python</span>
+                        <span class="card-title">高级组件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            核桃的数量a,b,c=map(int,input().split())
-def duan(a,b,c):
-    n=1
-    while True:
-        if n%a==0 and n%b==0 and n%c==0:
-  
+                            ListView
+允许用户通过手指上下滑动将屏幕外的数据滚动到屏幕内，同时原有数据滚动出屏幕。    - 用于垂直显示，如果显示内容过多，则会自动出现垂直滚动条    - 能通过适配器将数据和显示空间绑定，在有限的屏幕上提供大量内容供用户选
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-07
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Android%E5%BC%80%E5%8F%91/" class="post-category">
+                                    Android开发
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Android%E5%BC%80%E5%8F%91/">
+                        <span class="chip bg-color">Android开发</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/03/19/java-dui-xiang-he-lei/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Java对象和类">
+                        
+                        <span class="card-title">Java对象和类</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            为对象定义类
+类为对象定义属性和行为
+一个对象的状态由具有当前值的数据域来表示
+对象的行为由方法完成
+一个对象是类的一个实例
+
+定义类和创建对象
+类是对象的定义，对象是从类创建创建类的语法
+
+
+public / privte
+
+class
+
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -884,58 +870,8 @@ def duan(a,b,c):
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/03/05/cipher-md/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="cipher.md">
-                        
-                        <span class="card-title">cipher.md</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            凯撒密码#include &lt;iostream>
-using namespace std;
-char upper_E3(char str,int shift)
-{
-        return char((str-65+shift)%2
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-05
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            duanqiao
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-                        <span class="chip bg-color">密码学</span>
+                    <a href="/tags/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/">
+                        <span class="chip bg-color">Java对象和类</span>
                     </a>
                     
                 </div>
