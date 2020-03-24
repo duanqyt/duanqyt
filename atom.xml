@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://duanqyt.xyz/"/>
-  <updated>2020-03-23T06:17:40.338Z</updated>
+  <updated>2020-03-24T04:18:53.098Z</updated>
   <id>https://duanqyt.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>块内频数测试</title>
+    <link href="https://duanqyt.xyz/2020/03/24/kuai-nei-pin-shu-ce-shi/"/>
+    <id>https://duanqyt.xyz/2020/03/24/kuai-nei-pin-shu-ce-shi/</id>
+    <published>2020-03-24T04:18:34.636Z</published>
+    <updated>2020-03-24T04:18:53.098Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;算法如下：&lt;/p&gt;
+&lt;pre class=&quot; language-cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token comment&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>高级组件</title>
