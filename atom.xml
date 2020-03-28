@@ -44,11 +44,11 @@
   </entry>
   
   <entry>
-    <title>test.md</title>
-    <link href="https://duanqyt.xyz/2020/03/26/test-md/"/>
-    <id>https://duanqyt.xyz/2020/03/26/test-md/</id>
+    <title>栈和队列.md</title>
+    <link href="https://duanqyt.xyz/2020/03/26/shu-ju-jie-gou-zhan/"/>
+    <id>https://duanqyt.xyz/2020/03/26/shu-ju-jie-gou-zhan/</id>
     <published>2020-03-26T05:16:37.000Z</published>
-    <updated>2020-03-26T05:16:37.675Z</updated>
+    <updated>2020-03-28T06:30:36.959Z</updated>
     
     <summary type="html">
     
@@ -56,17 +56,17 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;h3 id=&quot;限定性线性表——栈和队列&quot;&gt;&lt;a href=&quot;#限定性线性表——栈和队列&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
     
+      <category term="数据结构" scheme="https://duanqyt.xyz/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="programming" scheme="https://duanqyt.xyz/tags/programming/"/>
     
   </entry>
   
