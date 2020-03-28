@@ -532,10 +532,14 @@
 <li>定义一个栈<pre class=" language-Cpp"><code class="language-Cpp">#define True 1
 #define False 0
 #define Stack_Size 50
+typedef struct
+{
+ StackElementType elem[Stack_Size];
+ int top;
+}SeqStack;
 </code></pre>
 </li>
 </ol>
-<p>typedef struct<br>{<br>    StackElementType elem[Stack_Size];<br>    int top;<br>}SeqStack;</p>
 <pre><code>
 2. 初始化
 ```Cpp
