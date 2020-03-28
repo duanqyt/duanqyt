@@ -468,7 +468,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    451
+                    454
                 </div>
                 
 
@@ -548,46 +548,48 @@ void InitStack(SeqStack *S)
     /*构造一个空栈*/
     S-&gt;top = -1;
 }
-S是具有顺序栈类型的一个变量</code></pre><ol start="3">
-<li><p>判空</p>
-<pre class=" language-Cpp"><code class="language-Cpp">int IsEmpty(SeqStack *S)
+//S是具有顺序栈类型的一个变量
+</code></pre><ol start="3">
+<li>判空<pre class=" language-Cpp"><code class="language-Cpp">int IsEmpty(SeqStack *S)
 {
  /* S为空返回true；S为假返回false */
  return (S->top == -1 ? TRUE:FALSE);
-}</code></pre>
-</li>
-<li><p>判满</p>
-<pre class=" language-Cpp"><code class="language-Cpp">int IsFull(SeqStack *S)
-{
- return (S->top == Stack_Size ? TRUE:FALSE);
 }
 </code></pre>
 </li>
 </ol>
 <pre><code>
-5. 进栈
+4. 判满
 ```Cpp
-int Push(SeqStack *S,StackElementType x)
+int IsFull(SeqStack *S)
 {
-    if(S-&gt;top==Stack_Size) return False; //栈满
-    S-&gt;top++;
-    S-&gt;elem[S-&gt;top] = x;
-    return TRUE;
+    return (S-&gt;top == Stack_Size ? TRUE:FALSE);
 }
-</code></pre><ol start="6">
-<li>出栈<pre class=" language-Cpp"><code class="language-Cpp">int Pop(SepStack *S,StackElementType *x)
+</code></pre><ol start="5">
+<li>进栈<pre class=" language-Cpp"><code class="language-Cpp">int Push(SeqStack *S,StackElementType x)
 {
- if(S->top == -1) return False;
- else
- {
-     *x = S->elem[S->top];
-     S->top--;
-     return TRUE;
- }
-}</code></pre>
+ if(S->top==Stack_Size) return False; //栈满
+ S->top++;
+ S->elem[S->top] = x;
+ return TRUE;
+}
+</code></pre>
 </li>
 </ol>
-<script>
+<pre><code>
+6. 出栈
+```Cpp
+int Pop(SepStack *S,StackElementType *x)
+{
+    if(S-&gt;top == -1) return False;
+    else
+    {
+        *x = S-&gt;elem[S-&gt;top];
+        S-&gt;top--;
+        return TRUE;
+    }
+}
+</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
