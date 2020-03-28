@@ -468,14 +468,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    454
+                    442
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -529,67 +529,70 @@
 <li>top = -1 表示空栈</li>
 </ol>
 <h5 id="函数的实现"><a href="#函数的实现" class="headerlink" title="函数的实现"></a>函数的实现</h5><ol>
-<li>定义一个栈<pre class=" language-Cpp"><code class="language-Cpp">#define True 1
+<li>定义一个栈</li>
+</ol>
+<pre class=" language-Cpp"><code class="language-Cpp">#define True 1
 #define False 0
 #define Stack_Size 50
 typedef struct
 {
- StackElementType elem[Stack_Size];
- int top;
+    StackElementType elem[Stack_Size];
+    int top;
 }SeqStack;
 </code></pre>
-</li>
+<ol start="2">
+<li>初始化</li>
 </ol>
-<pre><code>
-2. 初始化
-```Cpp
-void InitStack(SeqStack *S)
+<pre class=" language-Cpp"><code class="language-Cpp">void InitStack(SeqStack *S)
 {
     /*构造一个空栈*/
-    S-&gt;top = -1;
+    S->top = -1;
 }
 //S是具有顺序栈类型的一个变量
-</code></pre><ol start="3">
-<li>判空<pre class=" language-Cpp"><code class="language-Cpp">int IsEmpty(SeqStack *S)
+</code></pre>
+<ol start="3">
+<li>判空</li>
+</ol>
+<pre class=" language-Cpp"><code class="language-Cpp">int IsEmpty(SeqStack *S)
 {
- /* S为空返回true；S为假返回false */
- return (S->top == -1 ? TRUE:FALSE);
+    /* S为空返回true；S为假返回false */
+    return (S->top == -1 ? TRUE:FALSE);
 }
 </code></pre>
-</li>
+<ol start="4">
+<li>判满</li>
 </ol>
-<pre><code>
-4. 判满
-```Cpp
-int IsFull(SeqStack *S)
+<pre class=" language-Cpp"><code class="language-Cpp">int IsFull(SeqStack *S)
 {
-    return (S-&gt;top == Stack_Size ? TRUE:FALSE);
-}
-</code></pre><ol start="5">
-<li>进栈<pre class=" language-Cpp"><code class="language-Cpp">int Push(SeqStack *S,StackElementType x)
-{
- if(S->top==Stack_Size) return False; //栈满
- S->top++;
- S->elem[S->top] = x;
- return TRUE;
+    return (S->top == Stack_Size ? TRUE:FALSE);
 }
 </code></pre>
-</li>
+<ol start="5">
+<li>进栈</li>
 </ol>
-<pre><code>
-6. 出栈
-```Cpp
-int Pop(SepStack *S,StackElementType *x)
+<pre class=" language-Cpp"><code class="language-Cpp">int Push(SeqStack *S,StackElementType x)
 {
-    if(S-&gt;top == -1) return False;
+    if(S->top==Stack_Size) return False; //栈满
+    S->top++;
+    S->elem[S->top] = x;
+    return TRUE;
+}
+</code></pre>
+<ol start="6">
+<li>出栈</li>
+</ol>
+<pre class=" language-Cpp"><code class="language-Cpp">int Pop(SepStack *S,StackElementType *x)
+{
+    if(S->top == -1) return False;
     else
     {
-        *x = S-&gt;elem[S-&gt;top];
-        S-&gt;top--;
+        *x = S->elem[S->top];
+        S->top--;
         return TRUE;
     }
 }
-</code></pre><script>
+</code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
