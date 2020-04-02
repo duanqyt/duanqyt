@@ -200,19 +200,6 @@
     
     
     <entry>
-      <title>bossXiang&#39;s blog</title>
-      <link href="/2020/03/09/bossxiang-s-blog/"/>
-      <url>/2020/03/09/bossxiang-s-blog/</url>
-      
-        <content type="html"><![CDATA[<a id="more"></a><h3 id="MD5绕过"><a href="#MD5绕过" class="headerlink" title="MD5绕过"></a>MD5绕过</h3><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>?php<span class="token variable">$md51</span> <span class="token operator">=</span> md5<span class="token punctuation">(</span><span class="token string">'240610708'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token variable">$a</span> <span class="token operator">=</span> @<span class="token variable">$_GET</span><span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token variable">$md52</span> <span class="token operator">=</span> @md5<span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">if</span> <span class="token punctuation">(</span>isset<span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">))</span><span class="token punctuation">{</span>    if<span class="token punctuation">(</span><span class="token variable">$a</span> <span class="token operator">!=</span> <span class="token string">'QNKCDZO'</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">$md51</span><span class="token operator">==</span><span class="token variable">$md52</span><span class="token punctuation">)</span>    <span class="token punctuation">{</span>        <span class="token keyword">echo</span> <span class="token variable">$flag</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">else</span>    <span class="token punctuation">{</span>        <span class="token keyword">echo</span> <span class="token string">"false!!!"</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span>?<span class="token operator">></span></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>C#简易任务管理器</title>
       <link href="/2020/03/09/c-jian-yi-ren-wu-guan-li-qi/"/>
       <url>/2020/03/09/c-jian-yi-ren-wu-guan-li-qi/</url>
